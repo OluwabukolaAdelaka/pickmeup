@@ -1,37 +1,63 @@
-.pmu-cont {
-  background-color: #efefef !important;
-  position: absolute;
-  width: 100vw;
-  height: 5rem;
-}
-
 .pmu-container {
   background-color: #efefef !important;
+  min-width: 1440px;
+  height: 5.5rem;
   display: flex;
   justify-content: center;
   position: absolute;
-  padding: 0 5rem;
+  padding: 0 3rem;
 }
 
 .pmu-navitems {
-  margin-left: 40rem;
+  margin-left: 20rem;
 }
 
 .pmu-navlinks {
-  padding-right: 3rem !important;
+  padding: 1rem !important;
   font-size: 1.2rem;
   font-weight: 500;
   color: #3e3e3e;
   text-decoration: none;
 }
+.pmu-navlinks:hover {
+  color: #3e3e3e;
+}
 .sign-in {
   background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
   width: 8rem;
   height: 2.5rem;
-  margin-left: 5rem;
+  margin-left: 3rem;
   border: none;
   border-radius: 0.9rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: #3e3e3e;
+}
+
+/* Responsiveness */
+@media (min-width: 360px) and (max-width: 576px) {
+  .logo {
+  }
+
+  .pmu-container {
+    padding: 0 1rem;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .pmu-navitems {
+    margin-left: 10rem;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1600px) and (max-width: 2560px) {
+  .pmu-navitems {
+    margin-left: 50rem;
+  }
 }

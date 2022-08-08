@@ -5,9 +5,9 @@ import "../styles/Header.css";
 
 const Header = () => {
   return (
-    <nav className="navbar navbar-expand-lg pmu-cont">
-      <div className="container-fluid pmu-container">
-        <img src={Logo} alt="company logo" />
+    <nav className="navbar navbar-expand-lg pmu-container">
+      <div className="container-fluid">
+        <img src={Logo} className="logo" alt="company logo" />
         <button
           className="navbar-toggler"
           type="button"
