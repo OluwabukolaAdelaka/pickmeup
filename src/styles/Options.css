@@ -1,0 +1,74 @@
+.options-section {
+  margin: 1.5rem 2rem;
+}
+
+.option-hero-title {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin: 2rem auto;
+  color: #343434;
+}
+.options {
+  margin: 0rem 1rem;
+  padding: 0 3rem;
+  color: #343434;
+}
+
+.credit-card {
+  width: 30rem;
+  height: 20rem;
+  background-color: #efefef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.gift {
+  width: 30rem;
+  height: 20rem;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.truck {
+  width: 30rem;
+  height: 20rem;
+  background-color: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+.yellow-bg {
+  width: 30rem;
+  height: 20rem;
+  background-color: rgba(251, 237, 49, 0.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+.option-img {
+  padding: 1rem 0 0rem;
+}
+
+.option-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 1rem 0 0.5rem;
+}
+
+.option-msg {
+  font-size: 1rem;
+  font-weight: 600;
+}

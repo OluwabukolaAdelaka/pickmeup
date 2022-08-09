@@ -5,6 +5,7 @@ const Services = () => {
   return (
     <section className="container-fluid service-section overflow-hidden">
       <div className="container text-center">
+        <h3 className="service-hero-title">Our Services</h3>
         <div className="row">
           <div className="col service ">
             <h3 className="service-title">International Delivery</h3>
