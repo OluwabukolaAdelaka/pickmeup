@@ -21,7 +21,7 @@ const Contact = () => {
             <input type="text" name="message" placeholder="Message" />
           </div>
           <div className="btn">
-            <button type="submit" className="send-btn">
+            <button type="button" className="send-btn">
               Send
             </button>
           </div>
