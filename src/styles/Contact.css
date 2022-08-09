@@ -61,18 +61,14 @@
   border-radius: 0.938rem;
 }
 
-.form-control-message textarea {
-  margin: 0rem auto;
-  width: 27rem;
-  height: 5rem;
+input[type="text"][name="message"] {
+  padding: 1.5rem 13rem 10rem 1.5rem;
   background-color: transparent;
   border-radius: 0.938rem;
   font-size: 1.25rem;
   font-weight: 400;
-  padding: 0.5rem 1rem;
   border: none;
   outline: none;
-  resize: none;
 }
 
 .btn {

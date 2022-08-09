@@ -18,11 +18,8 @@ const Contact = () => {
             <input type="text" className="form-input" placeholder="General" />
           </div>
           <div className="form-control-message">
-            <textarea rows="5" placeholder="Message"></textarea>
+            <input type="text" name="message" placeholder="Message" />
           </div>
-          {/* <button type="submit" className="send-btn">
-            Send
-          </button> */}
           <div className="btn">
             <button type="submit" className="send-btn">
               Send
