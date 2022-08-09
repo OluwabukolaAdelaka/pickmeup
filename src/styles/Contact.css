@@ -1,0 +1,94 @@
+.contact-section {
+  background-color: #f7f4f4;
+  width: 63rem;
+  margin: 0 auto;
+}
+
+.contact-title1 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #c4c4c4;
+  padding: 3rem 0 0;
+}
+
+.contact-title2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  padding: 0rem 0 1.5rem;
+}
+
+.contact-title2::after {
+  content: "";
+  border-bottom: 0.3rem solid #3e3e3e;
+  width: 6rem;
+  display: block;
+  margin: 1rem auto 0rem;
+}
+
+.contact-form {
+  background-color: #ffffff;
+  width: 46rem;
+  margin: 4rem auto;
+  padding: 3rem;
+}
+
+.form-control {
+  margin: 1rem auto;
+  width: 27rem;
+  height: 5rem;
+  background-color: #f5f5f5;
+  border-radius: 0.938rem;
+}
+
+.form-input {
+  background-color: transparent;
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+}
+
+.form-control-message {
+  margin: 1rem auto;
+  width: 27rem;
+  height: 10rem;
+  background-color: #f5f5f5;
+  border-radius: 0.938rem;
+}
+
+.form-control-message textarea {
+  margin: 0rem auto;
+  width: 27rem;
+  height: 5rem;
+  background-color: transparent;
+  border-radius: 0.938rem;
+  font-size: 1.25rem;
+  font-weight: 400;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+}
+.send-btn {
+  background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
+  width: 14rem;
+  height: 4rem;
+  border: none;
+  border-radius: 0.9rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #343434;
+  margin: 1rem 0;
+}
