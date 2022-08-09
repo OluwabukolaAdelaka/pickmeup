@@ -1,0 +1,57 @@
+.review-section {
+  background-color: #f3f3f3;
+  height: 50rem;
+  margin: 4rem 0;
+}
+
+.review-hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.review-hero-title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: #343434;
+}
+
+.review-hero-msg {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  width: 40rem;
+}
+
+.review-card {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-right: 1rem;
+}
+
+.avatar {
+  margin: 0.5rem 0;
+}
+.review-msg {
+  padding: 1.5rem 0;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.review-slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 0;
+}
+
+.slider-img {
+  margin: 0 1rem;
+}
