@@ -4,7 +4,7 @@ import "../styles/Hero.css";
 
 const Hero = () => {
   return (
-    <main className="hero-section">
+    <main className="container-fluid hero-section">
       <div className="row">
         <div className="col col-md-5">
           <h1 className="hero-msg">

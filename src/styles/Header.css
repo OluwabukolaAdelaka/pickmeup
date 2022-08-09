@@ -1,9 +1,9 @@
 .pmu-container {
   background-color: #efefef !important;
-  min-width: 1440px;
   height: 5.5rem;
   display: flex;
   justify-content: center;
+  align-items: center;
   position: absolute;
   padding: 0 3rem;
 }

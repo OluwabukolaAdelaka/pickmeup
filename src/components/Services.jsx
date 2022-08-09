@@ -3,55 +3,55 @@ import "../styles/Services.css";
 
 const Services = () => {
   return (
-    <section className="service-section">
-      <h1 className="service-hero-title">Our Services</h1>
-      <div className="row">
-        <div className="col service">
-          <h3 className="service-title">International Delivery</h3>
-          <p className="service-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            modi iste. Commodi voluptas assumenda incidunt earum deserunt
-            accusamus ipsum itaque ipsa? Ex deleniti molestiae, assumenda
-            nostrum vitae nam, quibusdam iusto facere porro facilis error.
-            Aliquam perspiciatis, possimus soluta voluptate assumenda quod
-            repellendus maxime voluptatem obcaecati quo quae alias ea minus
-          </p>
-        </div>
-
-        <div className="col service">
-          <h3 className="service-title">Cargo Service</h3>
-          <p className="service-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            modi iste. Commodi voluptas assumenda incidunt earum deserunt
-            accusamus ipsum itaque ipsa? Ex deleniti molestiae, assumenda
-            nostrum vitae nam, quibusdam iusto facere porro facilis error.
-            Aliquam perspiciatis, possimus soluta voluptate assumenda quod
-            repellendus maxime voluptatem obcaecati quo quae alias ea minus
-          </p>
-        </div>
-      </div>
-      <div className="row">
-        <div className="col service">
-          <h3 className="service-title">Import</h3>
-          <p className="service-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            modi iste. Commodi voluptas assumenda incidunt earum deserunt
-            accusamus ipsum itaque ipsa? Ex deleniti molestiae, assumenda
-            nostrum vitae nam, quibusdam iusto facere porro facilis error.
-            Aliquam perspiciatis, possimus soluta voluptate assumenda quod
-            repellendus maxime voluptatem obcaecati quo quae alias ea minus
-          </p>
-        </div>
-        <div className="col service">
-          <h3 className="service-title">Consultancy</h3>
-          <p className="service-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta,
-            modi iste. Commodi voluptas assumenda incidunt earum deserunt
-            accusamus ipsum itaque ipsa? Ex deleniti molestiae, assumenda
-            nostrum vitae nam, quibusdam iusto facere porro facilis error.
-            Aliquam perspiciatis, possimus soluta voluptate assumenda quod
-            repellendus maxime voluptatem obcaecati quo quae alias ea minus
-          </p>
+    <section className="container-fluid service-section overflow-hidden">
+      <div className="container text-center">
+        <div className="row">
+          <div className="col service ">
+            <h3 className="service-title">International Delivery</h3>
+            <p className="service-msg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
+              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
+              deserunt ratione quaerat adipisci, similique aut eveniet hic
+              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
+              qui.
+            </p>
+          </div>
+          <div className="col service">
+            <h3 className="service-title">Cargo Service</h3>
+            <p className="service-msg">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
+              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
+              deserunt ratione quaerat adipisci, similique aut eveniet hic
+              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
+              qui.
+            </p>
+          </div>
+          <div className="row">
+            <div className="col service">
+              <h3 className="service-title">Import</h3>
+              <p className="service-msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                reiciendis consequuntur voluptate! Suscipit unde pariatur esse
+                itaque. Praesentium nostrum nihil officiis possimus deleniti
+                ullam deserunt ratione quaerat adipisci, similique aut eveniet
+                hic placeat repudiandae blanditiis cumque dolorem quidem,
+                consequatur qui.
+              </p>
+            </div>
+            <div className="col service">
+              <h3 className="service-title">Consultancy</h3>
+              <p className="service-msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
+                reiciendis consequuntur voluptate! Suscipit unde pariatur esse
+                itaque. Praesentium nostrum nihil officiis possimus deleniti
+                ullam deserunt ratione quaerat adipisci, similique aut eveniet
+                hic placeat repudiandae blanditiis cumque dolorem quidem,
+                consequatur qui.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
