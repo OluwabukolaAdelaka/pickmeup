@@ -1,0 +1,38 @@
+.about-section {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-about {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #c4c4c4;
+}
+
+.title-us {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  padding: 1rem 0;
+}
+
+.title-us::after {
+  content: "";
+  border-bottom: 0.3rem solid #000;
+  width: 6rem;
+  display: block;
+  margin: 1rem auto 0rem;
+}
+
+.about-msg {
+  width: 35rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #000000;
+  padding: 1rem 0;
+}
