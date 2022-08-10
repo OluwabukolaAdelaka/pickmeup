@@ -166,3 +166,7 @@ form {
   color: #9b9b9b;
   padding-top: 0.7rem;
 }
+
+.register-signup {
+  text-decoration: none;
+}

@@ -99,7 +99,7 @@ function Signup() {
                 Sign Up
               </button>
               <p className="register">
-                Have an account? <span className="signin">Sign in</span>
+                Have an account? <Link to="/signin" className="register-signin"><span className="signin">Sign In</span></Link>
               </p>
             </div>
           </form>
