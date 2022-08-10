@@ -1,5 +1,6 @@
 import React from "react";
 import HeroImg from "../assets/pana.png";
+import { Link } from "react-router-dom";
 import "../styles/Hero.css";
 
 const Hero = () => {
@@ -16,7 +17,9 @@ const Hero = () => {
           <p className="hero-text">
             We make sending and receiving percel accros the globe easy.
           </p>
-          <button className="hero-btn">Sign UP</button>
+          <Link to="/signup">
+            <button className="hero-btn">Sign UP</button>
+          </Link>
         </div>
         <div className="col col-md-7">
           <img src={HeroImg} className="img-fluid" alt="hero-img" />

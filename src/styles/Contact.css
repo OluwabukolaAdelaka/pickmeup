@@ -1,10 +1,12 @@
 .contact-section {
   background-color: #f7f4f4;
   width: 63rem;
+  height: 70rem;
   margin: 0 auto;
 }
 
 .contact-title1 {
+  margin: 12rem 0 0;
   text-align: center;
   font-size: 3rem;
   font-weight: 500;

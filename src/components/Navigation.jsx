@@ -1,9 +1,9 @@
 import React from "react";
 import Logo from "../assets/pickmeup-logo.png";
 import { Link } from "react-router-dom";
-import "../styles/Header.css";
+import "../styles/Navigation.css";
 
-const Header = () => {
+const Navigation = () => {
   return (
     <nav className="navbar navbar-expand-lg pmu-container fixed-top">
       <div className="container-fluid">
@@ -27,17 +27,17 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="pmu-navlinks" to="/">
+              <Link className="pmu-navlinks" to="/about">
                 About
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="pmu-navlinks" to="/">
-                Service
+              <Link className="pmu-navlinks" to="/services">
+                Services
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="pmu-navlinks" to="/">
+              <Link className="pmu-navlinks" to="/contact">
                 Contact
               </Link>
             </li>
@@ -49,4 +49,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navigation;

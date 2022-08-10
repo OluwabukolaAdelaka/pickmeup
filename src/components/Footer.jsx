@@ -18,17 +18,17 @@ const Footer = () => {
             </Link>
           </li>
           <li>
-            <Link className="footer-navlink" to="/">
+            <Link className="footer-navlink" to="/about">
               About
             </Link>
           </li>
           <li>
-            <Link className="footer-navlink" to="/">
-              Service
+            <Link className="footer-navlink" to="/services">
+              Services
             </Link>
           </li>
           <li>
-            <Link className="footer-navlink" to="/">
+            <Link className="footer-navlink" to="/contact">
               Contact
             </Link>
           </li>

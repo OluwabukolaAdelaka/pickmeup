@@ -1,5 +1,6 @@
 .service-section {
   background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
+  margin: 8rem 0 0;
   padding: 2.5rem;
   overflow-x: hidden;
 }

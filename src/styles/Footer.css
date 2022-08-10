@@ -27,6 +27,10 @@ li {
   text-decoration: none;
 }
 
+.footer-navlink:hover {
+  color: #ffffff;
+}
+
 .footer-icons {
   display: flex;
 }
