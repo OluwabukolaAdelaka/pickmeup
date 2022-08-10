@@ -1,9 +1,11 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 import "../styles/Contact.css";
 
 const Contact = () => {
   return (
     <section className="container-fluid contact-section">
+      <Navigation />
       <h3 className="contact-title1">SEND US A</h3>
       <h3 className="contact-title2">MESSAGE</h3>
       <div>

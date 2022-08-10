@@ -5,10 +5,14 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-  padding: 0 3rem;
+  padding: 1rem 3rem 0 2rem;
 }
 
+.logo {
+  padding-bottom: 1rem;
+}
 .pmu-navitems {
+  display: flex;
   margin-left: 20rem;
 }
 
@@ -32,32 +36,5 @@
   font-size: 1.2rem;
   font-weight: 700;
   color: #3e3e3e;
-}
-
-/* Responsiveness */
-@media (min-width: 360px) and (max-width: 576px) {
-  .logo {
-  }
-
-  .pmu-container {
-    padding: 0 1rem;
-  }
-}
-
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-}
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {
-  .pmu-navitems {
-    margin-left: 10rem;
-  }
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1600px) and (max-width: 2560px) {
-  .pmu-navitems {
-    margin-left: 50rem;
-  }
+  margin-bottom: 1rem;
 }

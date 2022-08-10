@@ -1,9 +1,10 @@
-.signup-section {
+.signin-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 1440px;
   margin: 3rem 0;
+  background-color: #f6f6f6;
 }
 
 form {
@@ -23,7 +24,7 @@ form {
   object-fit: cover;
 }
 
-.signup-logo {
+.signin-logo {
   position: absolute;
   top: 3rem;
   left: 3rem;
@@ -41,22 +42,24 @@ form {
 
 .title {
   color: #989898;
-  font-size: 2.25rem;
+  font-size: 3rem;
   font-weight: 700;
+  color: #343434;
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .msg {
-  color: #989898;
-  font-size: 1.5rem;
-  font-weight: 500;
+  color: #555555;
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 3rem;
 }
 
 .label {
-  color: #989898;
-  font-size: 1.25rem;
-  font-weight: 500;
+  color: #555555;
+  font-size: 1.125rem;
+  font-weight: 400;
 }
 
 .form-control {
@@ -89,35 +92,71 @@ form {
   padding-bottom: 1rem;
   color: #989898;
 }
-.agreement-details {
+.details {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.agreement {
+/* .agreement {
   width: 33rem;
   text-align: center;
   font-size: 1rem;
   font-weight: 500;
   color: #9b9b9b;
   padding-top: 1rem;
-}
+} */
 
-.terms,
-.signin {
+.f-password {
   color: #fcee21;
+  text-align: end;
 }
 
-.signup-btn {
+.signin-btn {
   width: 27rem;
   height: 4rem;
   background-color: #fcee21;
   font-size: 1.25rem;
+  font-weight: 600;
   color: #343434;
   text-align: center;
   border-radius: 0.5rem;
   margin-top: 1.5rem;
+  margin-bottom: 1rem;
   border: none;
+  outline: none;
+}
+
+.or {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 27rem;
+  color: #343434;
+  font-size: 1.5rem;
+  font-weight: 500;
+  padding: 1rem 0 1.5rem;
+}
+
+.or::before,
+.or::after {
+  content: "";
+  margin: 1rem auto;
+  padding: 0rem 1rem;
+  flex: 1;
+  border-bottom: 1px solid #343434;
+}
+
+.signin-google {
+  width: 27rem;
+  height: 4rem;
+  background-color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #343434;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  border: 0.5px solid #989898;
   outline: none;
 }
 

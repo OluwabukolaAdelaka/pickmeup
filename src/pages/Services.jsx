@@ -1,9 +1,12 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 import "../styles/Services.css";
 
 const Services = () => {
   return (
     <section className="container-fluid service-section overflow-hidden">
+      <Navigation />
+
       <div className="container text-center">
         <h3 className="service-hero-title">Our Services</h3>
         <div className="row">

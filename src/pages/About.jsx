@@ -1,9 +1,11 @@
 import React from "react";
+import Navigation from "../components/Navigation";
 import "../styles/About.css";
 
 const About = () => {
   return (
     <section className="container-fluid about-section">
+      <Navigation />
       <div>
         <h3 className="title-about">ABOUT</h3>
         <h3 className="title-us">US</h3>
