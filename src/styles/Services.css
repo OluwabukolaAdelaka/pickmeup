@@ -1,21 +1,7 @@
-.service-section {
-  background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
-  min-height: 50rem;
-  margin: 8rem 0 0;
-  padding: 2rem 0;
-}
-
 .service-hero-title {
-  text-align: center;
   font-size: 2.3rem;
   font-weight: 600;
   margin: 2rem auto;
-  color: #343434;
-}
-
-.service {
-  background-color: #ffffff;
-  margin: 1rem 0rem;
   color: #343434;
 }
 
@@ -23,7 +9,7 @@
   text-align: center;
   font-size: 2.3rem;
   font-weight: 600;
-  margin: 3rem 0;
+  margin: 2rem 0;
   color: #343434;
 }
 
@@ -31,4 +17,5 @@
   font-size: 1.5rem;
   font-weight: 500;
   color: #343434;
+  padding-bottom: 4rem;
 }

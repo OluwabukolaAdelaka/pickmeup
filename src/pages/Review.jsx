@@ -8,62 +8,79 @@ import "../styles/Review.css";
 
 const Review = () => {
   return (
-    <section className="container-fluid review-section">
-      <div className="row">
-        <div className="col-sm-12 col-md-4"></div>
-        <div className="col-sm-12 col-md-4 review-hero-text">
-          <h3 className="review-hero-title text-center">
-            What Our Clients Say
-          </h3>
-          <p className="review-hero-msg text-center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
-            corrupti nemo esse reiciendis est doloremque error numquam quod
-            aliquam quam. Ipsa recusandae corrupti.
-          </p>
+    <>
+      <section
+        className="d-flex flex-column justify-content-center align-items-center px-1 mt-5 pb-5"
+        style={{
+          backgroundColor: "#f3f3f3",
+        }}
+      >
+        <div className="row d-flex flex-column justify-content-center align-items-center text-center">
+          <div className="d-none col"></div>
+          <div className="col-sm-12 col-md-6">
+            <h3 className="review-hero-title">What Our Clients Say</h3>
+            <p className="review-hero-msg">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius
+              corrupti nemo esse reiciendis est doloremque error numquam quod
+              aliquam quam. Ipsa recusandae corrupti.
+            </p>
+          </div>
+          <div className="d-none col"></div>
         </div>
-        <div className="col-sm-12 col-md-4"></div>
-      </div>
 
-      <div className="row">
-        <div
-          className="col-sm-12 col-md-6"
-          style={{
-            borderRight: "0.5rem solid #ffffff",
-          }}
-        >
-          <div className="text-center">
-            <img src={Avatar1} className="avatar img-fluid" alt="user" />
+        <div className="row text-center d-flex justify-content-center align-items-center">
+          <div className="d-none col"></div>
+          <div className="col-sm-12 col-md-8">
+            <div className="row row-cols-1 row-cols-md-2 g-4 pt-4">
+              <div className="col">
+                <div className="card border-light pt-4">
+                  <div className="card-body">
+                    <img src={Avatar1} className="img-fluid" alt="..." />
+                    <p className="card-text service-msg pt-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div className="col">
+                <div className="card border-light pt-4">
+                  <div className="card-body">
+                    <img src={Avatar2} className="img-fluid" alt="..." />
+                    <p className="card-text service-msg pt-4">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="review-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            distinctio blanditiis velit omnis? Vitae ratione, possimus rerum
-            labore odio commodi quis et deserunt, nisi quam facere molestias
-            explicabo magnam neque.
-          </p>
-        </div>
-        <div
-          className="col-sm-12 col-md-6"
-          style={{
-            borderLeft: "0.5rem solid #ffffff",
-          }}
-        >
-          <div className="text-center">
-            <img src={Avatar2} className="avatar img-fluid" alt="user" />
+          <div className="d-none col"></div>
+          <div className="review-slider">
+            <img
+              src={Slider1}
+              className="slider-img img-fluid"
+              alt="review slider"
+            />
+            <img
+              src={Slider2}
+              className="slider-img img-fluid"
+              alt="review slider"
+            />
+            <img
+              src={Slider3}
+              className="slider-img img-fluid"
+              alt="review slider"
+            />
           </div>
-          <p className="review-msg">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero
-            distinctio blanditiis velit omnis? Vitae ratione, possimus rerum
-            labore odio commodi quis et deserunt, nisi quam facere molestias
-            explicabo magnam neque.
-          </p>
         </div>
-      </div>
-      <div className="review-slider">
-        <img src={Slider1} className="slider-img" alt="review slider" />
-        <img src={Slider2} className="slider-img" alt="review slider" />
-        <img src={Slider3} className="slider-img" alt="review slider" />
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

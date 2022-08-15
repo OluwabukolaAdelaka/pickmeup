@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/pickmeup-logo.png";
-import SignUpImg from "../assets/signup.png";
+import SignUpImg from "../assets/signup.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
@@ -13,12 +12,12 @@ function Signup() {
     setVisibility(!visibility);
   };
   return (
-    <section className="d-flex flex-column justify-content-center align-items-center">
+    <section className="d-flex flex-column justify-content-center align-items-center ">
       <div className="row">
-        <div className="d-none d-md-block col-md-6">
-          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
+        <div className="d-none d-md-block col-md-6 mt-4">
           <Link to="/">
-            <img src={Logo} className="img-fluid signUpLogo" alt="logo" />
+          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
+            
           </Link>
         </div>
         <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
@@ -89,7 +88,7 @@ function Signup() {
             
             <p className="signUpRegister">
               Already have an account?
-              <Link to="/signin" className="logInLink">
+              <Link to="/signin" className="logInLink ps-1">
                 <span style={{ color: "#343434", fontWeight: "bold" }}> Log in</span>
               </Link>
             </p>

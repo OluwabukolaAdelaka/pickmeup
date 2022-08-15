@@ -4,72 +4,88 @@ import "../styles/Services.css";
 
 const Services = () => {
   return (
-    <section className="container-fluid service-section">
+    <>
       <Navigation />
-
-      <div className="container text-center">
+      <section
+        className="d-flex flex-column justify-content-center align-items-center px-1 pb-5"
+        style={{
+          backgroundImage:
+            "linear-gradient(to right, #fcee21 0%, #fcee21 100%)",
+        }}
+      >
         <h3 className="service-hero-title">Our Services</h3>
-        <div className="row">
-          <div
-            className="col-sm-12 col-md-6 service"
-            style={{ borderRight: "0.5rem solid #fcee21" }}
-          >
-            <h3 className="service-title">International Delivery</h3>
-            <p className="service-msg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
-              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
-              deserunt ratione quaerat adipisci, similique aut eveniet hic
-              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
-              qui.
-            </p>
+        <div className="row text-center d-flex justify-content-center align-items-center">
+          <div className="d-none col"></div>
+          <div className="col-sm-12 col-md-8">
+            <div class="row row-cols-1 row-cols-md-2 g-4">
+              <div class="col">
+                <div class="card border-light">
+                  <div class="card-body">
+                    <h5 class="card-title service-title">
+                      International Delivery
+                    </h5>
+                    <p class="card-text service-msg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam
+                      voluptates voluptatibus! Voluptatum laudantium eius at
+                      labore quos quibusdam doloremque veniam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-light">
+                  <div class="card-body">
+                    <h5 class="card-title service-title">Cargo Service</h5>
+                    <p class="card-text service-msg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam
+                      voluptates voluptatibus! Voluptatum laudantium eius at
+                      labore quos quibusdam doloremque veniam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-light">
+                  <div class="card-body">
+                    <h5 class="card-title service-title">Import</h5>
+                    <p class="card-text service-msg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam
+                      voluptates voluptatibus! Voluptatum laudantium eius at
+                      labore quos quibusdam doloremque veniam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <div class="card border-light">
+                  <div class="card-body">
+                    <h5 class="card-title service-title">Consultancy</h5>
+                    <p class="card-text service-msg">
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                      Aliquam natus, modi consequatur ipsa praesentium neque
+                      sint provident ad tempore corrupti repudiandae atque
+                      possimus autem nostrum nemo doloremque adipisci magnam
+                      voluptates voluptatibus! Voluptatum laudantium eius at
+                      labore quos quibusdam doloremque veniam.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div
-            className="col-sm-12 col-md-6 service"
-            style={{ borderLeft: "0.5rem solid #fcee21" }}
-          >
-            <h3 className="service-title">Cargo Service</h3>
-            <p className="service-msg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
-              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
-              deserunt ratione quaerat adipisci, similique aut eveniet hic
-              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
-              qui.
-            </p>
-          </div>
-
-          <div
-            className="col-sm-12 col-md-6 service"
-            style={{ borderRight: "0.5rem solid #fcee21" }}
-          >
-            <h3 className="service-title">Import</h3>
-            <p className="service-msg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
-              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
-              deserunt ratione quaerat adipisci, similique aut eveniet hic
-              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
-              qui.
-            </p>
-          </div>
-          <div
-            className="col-sm-12 col-md-6 service"
-            style={{ borderLeft: "0.5rem solid #fcee21" }}
-          >
-            <h3 className="service-title">Consultancy</h3>
-            <p className="service-msg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima
-              reiciendis consequuntur voluptate! Suscipit unde pariatur esse
-              itaque. Praesentium nostrum nihil officiis possimus deleniti ullam
-              deserunt ratione quaerat adipisci, similique aut eveniet hic
-              placeat repudiandae blanditiis cumque dolorem quidem, consequatur
-              qui.
-            </p>
-          </div>
+          <div className="d-none col"></div>
         </div>
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 

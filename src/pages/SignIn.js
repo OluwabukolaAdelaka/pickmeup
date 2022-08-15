@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import Logo from "../assets/pickmeup-logo.png";
-import SignUpImg from "../assets/signup.png";
+import SignUpImg from "../assets/signup.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
@@ -16,10 +15,10 @@ function SignIn() {
   return (
     <section className="d-flex flex-column justify-content-center align-items-center">
       <div className="row">
-        <div className="d-none d-md-block col-md-6">
-          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
+        <div className="d-none d-md-block col-md-6 mt-4">
+          
           <Link to="/">
-            <img src={Logo} className="img-fluid signin-logo" alt="logo" />
+          <img src={SignUpImg} className="img-fluid" alt="sign in" />
           </Link>
         </div>
         {/* Form Part */}
@@ -101,9 +100,9 @@ function SignIn() {
 
             <p className="signin-register">
               Don’t have an account?
-              <Link to="/signup" className="signin-link">
+              <Link to="/signup" className="signin-link ps-1">
                 <span style={{ color: "#343434", fontWeight: "bold" }}>
-                  Sign Up
+                   Sign Up
                 </span>
               </Link>
             </p>

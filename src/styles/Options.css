@@ -1,53 +1,8 @@
-/* .options-section {
-  background-color: blue;
-  border-readius: 50%;
-} */
-
-/* .option-hero-title {
-  text-align: center;
+.mycard-hero-title {
   font-size: 2.3rem;
   font-weight: 600;
-  margin: 2rem auto;
   color: #343434;
-} */
-/* .options {
-  color: #343434;
-} */
-
-/* .credit-card {
-  background-color: #efefef;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .gift {
-  background-color: #e5e5e5;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .truck {
-  background-color: #d9d9d9;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-/* .yellow-bg {
-  background-color: rgba(251, 237, 49, 0.4);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
-
-/* .option-img {
-  padding: 1rem 0 0rem;
-} */
+}
 
 .mycard-title {
   font-size: 1.5rem;

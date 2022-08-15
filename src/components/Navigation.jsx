@@ -5,7 +5,7 @@ import "../styles/Navigation.css";
 
 const Navigation = () => {
   return (
-    <nav className="navbar navbar-expand-lg d-flex justify-content-around pmu-container fixed-top">
+    <nav className="navbar navbar-expand-lg pmu-container fixed-top">
       <div className="container-fluid">
         <img src={Logo} className="logo" alt="company logo" />
         <button
@@ -20,7 +20,7 @@ const Navigation = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse " id="navbarNav">
-          <ul className="navbar-nav pmu-navitems ms-auto">
+          <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <Link className="nav-link pmu-navlinks" to="/">
                 Home
