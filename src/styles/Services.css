@@ -1,8 +1,8 @@
 .service-section {
   background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
+  min-height: 50rem;
   margin: 8rem 0 0;
-  padding: 2.5rem;
-  overflow-x: hidden;
+  padding: 2rem 0;
 }
 
 .service-hero-title {
@@ -14,11 +14,8 @@
 }
 
 .service {
-  width: 40rem;
-  height: 32rem;
   background-color: #ffffff;
-  margin: 1rem 1rem;
-  padding: 0 3rem;
+  margin: 1rem 0rem;
   color: #343434;
 }
 

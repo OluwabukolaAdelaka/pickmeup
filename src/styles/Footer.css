@@ -7,20 +7,9 @@ footer {
 li {
   list-style: none;
 }
-.footer-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.footer-navlinks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 
 .footer-navlink {
-  margin: 0 1rem;
+  /* margin: 0 1rem; */
   font-size: 1.3rem;
   font-weight: 500;
   color: #ffffff;
@@ -36,18 +25,14 @@ li {
 }
 
 .footer-icon {
-  margin: 0 0.6rem;
+  margin: 1rem 0.6rem;
 }
 
 .details {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 1rem 0;
+  margin: 1rem;
 }
 
 .address {
   margin: 1rem 0;
-  padding-bottom: 5rem;
+  padding-bottom: 3rem;
 }

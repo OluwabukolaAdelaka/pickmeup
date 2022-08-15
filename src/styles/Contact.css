@@ -1,12 +1,10 @@
 .contact-section {
-  background-color: #f7f4f4;
-  width: 63rem;
   height: 70rem;
   margin: 0 auto;
 }
 
 .contact-title1 {
-  margin: 12rem 0 0;
+  margin: 3rem 0 0rem;
   text-align: center;
   font-size: 3rem;
   font-weight: 500;
@@ -30,63 +28,28 @@
   margin: 1rem auto 0rem;
 }
 
+.contact-details {
+  background-color: #f7f4f4;
+  margin: 1rem auto;
+  padding: 1rem 0;
+  border-radius: 1rem;
+}
+
 .contact-form {
   background-color: #ffffff;
-  width: 46rem;
-  margin: 4rem auto;
-  padding: 3rem;
+  margin: 0 auto 4rem;
+  padding: 4rem;
+  border-radius: 1rem;
 }
 
-.form-control {
-  margin: 1rem auto;
-  width: 27rem;
-  height: 5rem;
-  background-color: #f5f5f5;
-  border-radius: 0.938rem;
-}
-
-.form-input {
-  background-color: transparent;
-  width: 100%;
-  font-size: 1.25rem;
-  font-weight: 400;
-  padding: 0.5rem 1rem;
-  border: none;
-  outline: none;
-}
-
-.form-control-message {
-  margin: 1rem auto;
-  width: 27rem;
-  height: 10rem;
-  background-color: #f5f5f5;
-  border-radius: 0.938rem;
-}
-
-input[type="text"][name="message"] {
-  padding: 1.5rem 13rem 10rem 1.5rem;
-  background-color: transparent;
-  border-radius: 0.938rem;
-  font-size: 1.25rem;
-  font-weight: 400;
-  border: none;
-  outline: none;
-}
-
-.btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: none;
-}
 .send-btn {
   background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
-  width: 14rem;
-  height: 4rem;
+  width: 12rem;
+  height: 3rem;
   border: none;
-  border-radius: 0.9rem;
-  font-size: 2rem;
-  font-weight: 600;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
   color: #343434;
   margin: 1rem 0;
 }

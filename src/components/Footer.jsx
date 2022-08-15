@@ -9,42 +9,45 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="footer-nav">
-        <img src={Logo} alt="logo" />
-        <ul className="footer-navlinks">
-          <li>
-            <Link className="footer-navlink" to="/">
-              Home
+      <nav className="navbar navbar-expand-lg d-sm-block d-flex justify-content-around">
+        <div className="container-fluid">
+          <img src={Logo} alt="company logo" />
+
+          <ul className="navbar-nav footer-navlinks d-flex">
+            <li className="nav-item">
+              <Link className="nav-link footer-navlink" to="/">
+                Home
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link footer-navlink" to="/about">
+                About
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link footer-navlink" to="/services">
+                Services
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link className="nav-link footer-navlink" to="/contact">
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <div className="footer-icons">
+            <Link to="/">
+              <img src={InstagramIcon} className="footer-icon" alt="icon" />
             </Link>
-          </li>
-          <li>
-            <Link className="footer-navlink" to="/about">
-              About
+            <Link to="/">
+              <img src={TwitterIcon} className="footer-icon" alt="icon" />
             </Link>
-          </li>
-          <li>
-            <Link className="footer-navlink" to="/services">
-              Services
+            <Link to="/">
+              <img src={FacebookIcon} className="footer-icon" alt="icon" />
             </Link>
-          </li>
-          <li>
-            <Link className="footer-navlink" to="/contact">
-              Contact
-            </Link>
-          </li>
-        </ul>
-        <div className="footer-icons">
-          <Link to="/">
-            <img src={InstagramIcon} className="footer-icon" alt="icon" />
-          </Link>
-          <Link to="/">
-            <img src={TwitterIcon} className="footer-icon" alt="icon" />
-          </Link>
-          <Link to="/">
-            <img src={FacebookIcon} className="footer-icon" alt="icon" />
-          </Link>
+          </div>
         </div>
-      </div>
+      </nav>
 
       {/* address */}
       <div className="details">

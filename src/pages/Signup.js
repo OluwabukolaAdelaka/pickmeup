@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import Logo from "../assets/pickmeup-logo.png";
-import SignUpImg2 from "../assets/signup-img2.png";
+import SignUpImg from "../assets/signup.png";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
+import { FcGoogle } from "react-icons/fc";
 import "../styles/Signup.css";
 
 function Signup() {
@@ -12,100 +13,92 @@ function Signup() {
     setVisibility(!visibility);
   };
   return (
-    <section className="signup-section">
-      <div className="row signup-form">
-        <div className="col img-part">
-          <img src={SignUpImg2} className="img-fluid img" alt="sign up" />
+    <section className="d-flex flex-column justify-content-center align-items-center">
+      <div className="row">
+        <div className="d-none d-md-block col-md-6">
+          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
           <Link to="/">
-            <img src={Logo} className="img-fluid signup-logo" alt="logo" />
+            <img src={Logo} className="img-fluid signUpLogo" alt="logo" />
           </Link>
         </div>
-        <div className="col form-details">
-          <div className="signup-hero">
-            <h3 className="title">Join Us at Pickmeup</h3>
-            <p className="msg">
-              Enter your details to create a Pickmeup account
-            </p>
-          </div>
+        <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+             <h3 className="signUpTitle">Join Us at Pickmeup</h3>
+             
+          
           <form>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">FIRST NAME</label>
-                <input type="text" className="form-control" />
-              </div>
+          <div className="mb-3">
+              <label htmlFor="exampleInputName1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+                FULL NAME
+              </label>
+              <input
+                type="text"
+                className="form-control"
+                style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+              />
             </div>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">LAST NAME</label>
-                <input type="text" className="form-control" />
-              </div>
+            <div className="mb-3">
+              <label htmlFor="exampleInputEmail1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+                EMAIL
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                placeholder="Example@gmail.com"
+                style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+              />
             </div>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">EMAIL</label>
-                <input
-                  type="email"
-                  className="form-control"
-                  placeholder="Example@gmail.com"
-                />
-              </div>
-            </div>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">PASSWORD</label>
-                <div className="visible">
-                  <input
-                    type={visibility ? "text" : "password"}
-                    className="form-control"
-                    placeholder={visibility ? "password" : "********"}
-                  />
-                  <span className="icon" onClick={toggleVisibility}>
-                    {visibility ? (
+            <div className="mb-3">
+              <label htmlFor="exampleInputPassword1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+                PASSWORD
+              </label>
+              <div className="input-group">
+                <input type={visibility ? "text" : "password"} className="form-control" placeholder={visibility ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "3rem" }}/>
+                <span className="input-group-text" id="basic-addon2" onClick={toggleVisibility}>{visibility ? (
                       <MdOutlineVisibility />
                     ) : (
                       <MdOutlineVisibilityOff />
-                    )}
-                  </span>
-                </div>
+                    )}</span>
+                
               </div>
             </div>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">CONFIRM PASSWORD</label>
-                <div className="visible">
-                  <input
-                    type={visibility ? "text" : "password"}
-                    className="form-control"
-                    placeholder={visibility ? "password" : "********"}
-                  />
-                  <span className="icon" onClick={toggleVisibility}>
-                    {visibility ? (
+            <div className="mb-3">
+              <label htmlFor="exampleInputPassword2" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+                CONFIRM PASSWORD
+              </label>
+              <div className="input-group">
+                <input type={visibility ? "text" : "password"} className="form-control" placeholder={visibility ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "3rem" }} />
+                <span className="input-group-text" id="basic-addon2" onClick={toggleVisibility}>{visibility ? (
                       <MdOutlineVisibility />
                     ) : (
                       <MdOutlineVisibilityOff />
-                    )}
-                  </span>
-                </div>
+                    )}</span>
               </div>
             </div>
-            <div className="agreement-details">
-              <p className="agreement">
-                By clicking Signup, I acknowledge that i have read, understand
-                and agreed to the terms of
-                <span className="terms"> Pickmeup’s Privacy, Policy</span> and
-                <span className="terms"> Terms of Services</span>.
-              </p>
-              <button type="button" className="signup-btn">
-                Sign Up
+            
+            <div className="d-grid col-12 mx-auto">
+              <button className="btn signUpBtn" type="button">
+               Create an account
               </button>
-              <p className="register">
-                Have an account? <Link to="/signin" className="register-signin"><span className="signin">Sign In</span></Link>
-              </p>
             </div>
+            <span className="signUpOr">OR</span>
+            <div className="d-grid col-12 mx-auto">
+              <button className="btn signUpGoogle" type="button">
+                <FcGoogle size={30} /> Sign up with Google
+              </button>
+            </div>
+            
+            <p className="signUpRegister">
+              Already have an account?
+              <Link to="/signin" className="logInLink">
+                <span style={{ color: "#343434", fontWeight: "bold" }}> Log in</span>
+              </Link>
+            </p>
           </form>
+          
         </div>
       </div>
     </section>
+  
   );
 }
 

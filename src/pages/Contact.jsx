@@ -6,28 +6,57 @@ const Contact = () => {
   return (
     <section className="container-fluid contact-section">
       <Navigation />
-      <h3 className="contact-title1">SEND US A</h3>
-      <h3 className="contact-title2">MESSAGE</h3>
-      <div>
-        <form className="contact-form">
-          <div className="form-control">
-            <input type="text" className="form-input" placeholder="Name" />
+
+      <div className="row">
+        <div className="col-sm-12 col-md-3"></div>
+        <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center contact-details">
+          <h3 className="contact-title1">SEND US A</h3>
+          <h3 className="contact-title2">MESSAGE</h3>
+          <div className="col-sm-12 col-md-6  contact-form">
+            <form>
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="Name"
+                  style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  type="email"
+                  className="form-control"
+                  placeholder="Email"
+                  style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+                />
+              </div>
+              <div className="mb-3">
+                <input
+                  type="text"
+                  className="form-control"
+                  placeholder="General"
+                  style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+                />
+              </div>
+              <div className="mb-3">
+                <textarea
+                  className="form-control"
+                  style={{
+                    height: "10rem",
+                    backgroundColor: "#f7f4f4",
+                  }}
+                  placeholder="Mesage"
+                ></textarea>
+              </div>
+              <div className="d-grid col-12 mx-auto d-flex justify-content-center">
+                <button className="btn send-btn" type="button">
+                  Send
+                </button>
+              </div>
+            </form>
           </div>
-          <div className="form-control">
-            <input type="email" className="form-input" placeholder="Email" />
-          </div>
-          <div className="form-control">
-            <input type="text" className="form-input" placeholder="General" />
-          </div>
-          <div className="form-control-message">
-            <input type="text" name="message" placeholder="Message" />
-          </div>
-          <div className="btn">
-            <button type="button" className="send-btn">
-              Send
-            </button>
-          </div>
-        </form>
+        </div>
+        <div className="col-sm-12 col-md-3"></div>
       </div>
     </section>
   );

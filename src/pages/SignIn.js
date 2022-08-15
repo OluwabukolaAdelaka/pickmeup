@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Logo from "../assets/pickmeup-logo.png";
-import SignUpImg2 from "../assets/signup-img2.png";
+import SignUpImg from "../assets/signup.png";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
@@ -14,66 +14,99 @@ function SignIn() {
   };
 
   return (
-    <section className="signin-section">
-      <div className="row signin-form">
-        <div className="col img-part">
-          <img src={SignUpImg2} className="img-fluid img" alt="sign in" />
+    <section className="d-flex flex-column justify-content-center align-items-center">
+      <div className="row">
+        <div className="d-none d-md-block col-md-6">
+          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
           <Link to="/">
             <img src={Logo} className="img-fluid signin-logo" alt="logo" />
           </Link>
         </div>
-        <div className="col form-details">
-          <div className="signin-hero">
-            <h3 className="title">Welcome</h3>
-            <p className="msg">
-              Log in with your data entered during registration
-            </p>
-          </div>
+        {/* Form Part */}
+        <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
+          <h3 className="signin-title">Welcome!</h3>
           <form>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">EMAIL</label>
+            <div className="mb-3">
+              <label
+                htmlFor="exampleInputEmail1"
+                className="form-label"
+                style={{ color: "#555555", fontSize: "1.125rem" }}
+              >
+                EMAIL
+              </label>
+              <input
+                type="email"
+                className="form-control"
+                id="exampleInputEmail1"
+                placeholder="Example@gmail.com"
+                style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+              />
+            </div>
+            <div className="mb-3">
+              <label
+                htmlFor="exampleInputPassword1"
+                className="form-label"
+                style={{ color: "#555555", fontSize: "1.125rem" }}
+              >
+                PASSWORD
+              </label>
+              <div className="input-group">
                 <input
-                  type="email"
+                  type={visibility ? "text" : "password"}
                   className="form-control"
-                  placeholder="Example@gmail.com"
+                  placeholder={visibility ? "password" : "********"}
+                  style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
                 />
-              </div>
-            </div>
-            <div className="form-row">
-              <div className="col-lg-6">
-                <label className="label">PASSWORD</label>
-                <div className="visible">
-                  <input
-                    type={visibility ? "text" : "password"}
-                    className="form-control"
-                    placeholder={visibility ? "password" : "********"}
-                  />
-                  <span className="icon" onClick={toggleVisibility}>
-                    {visibility ? (
-                      <MdOutlineVisibility />
-                    ) : (
-                      <MdOutlineVisibilityOff />
-                    )}
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="details">
-              <p className="f-password">Forgot Password?</p>
-              <button type="button" className="signin-btn">
-                Sign In
-              </button>
-              <span className="or">OR</span>
-              <div className="google">
-                <button type="button" className="signin-google">
-                  <FcGoogle size={30} /> Sign with Google
+                <button
+                  className="btn btn-outline-secondary"
+                  type="button"
+                  onClick={toggleVisibility}
+                >
+                  {visibility ? (
+                    <MdOutlineVisibility />
+                  ) : (
+                    <MdOutlineVisibilityOff />
+                  )}
                 </button>
               </div>
-              <p className="register">
-                Don’t have an account? <Link to="/signup" className="register-signup"><span className="signup">Sign Up</span></Link>
-              </p>
             </div>
+
+            <div className="d-flex justify-content-between">
+              <div className="form-check">
+                <input
+                  className="form-check-input"
+                  type="checkbox"
+                  id="flexCheckDefault"
+                />
+                <label className="form-check-label" htmlFor="defaultCheck1">
+                  Remember me
+                </label>
+              </div>
+              <div>
+                <p>Forgot Password?</p>
+              </div>
+            </div>
+            <div className="d-grid col-12 mx-auto">
+              <button className="btn signin-btn" type="button">
+                Login
+              </button>
+            </div>
+
+            <span className="signin-or">OR</span>
+            <div className="d-grid col-12 mx-auto">
+              <button className="btn signin-google" type="button">
+                <FcGoogle size={30} /> Sign in with Google
+              </button>
+            </div>
+
+            <p className="signin-register">
+              Don’t have an account?
+              <Link to="/signup" className="signin-link">
+                <span style={{ color: "#343434", fontWeight: "bold" }}>
+                  Sign Up
+                </span>
+              </Link>
+            </p>
           </form>
         </div>
       </div>

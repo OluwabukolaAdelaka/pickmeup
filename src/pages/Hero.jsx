@@ -6,8 +6,8 @@ import "../styles/Hero.css";
 const Hero = () => {
   return (
     <main className="container-fluid hero-section">
-      <div className="row">
-        <div className="col col-md-5">
+      <div className="row d-flex justify-content-around">
+        <div className=" col-sm-12 col-md-6 d-flex flex-column justify-content-center">
           <h1 className="hero-msg">
             We are <span>Picmeup</span>
           </h1>
@@ -21,7 +21,7 @@ const Hero = () => {
             <button className="hero-btn">Sign UP</button>
           </Link>
         </div>
-        <div className="col col-md-7">
+        <div className=" col-sm-12 col-md-6">
           <img src={HeroImg} className="img-fluid" alt="hero-img" />
         </div>
       </div>

@@ -1,118 +1,17 @@
-.signin-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 1440px;
-  margin: 3rem 0;
-  background-color: #f6f6f6;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.img-part {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-.img {
-  position: relative;
-  object-fit: cover;
-}
-
 .signin-logo {
   position: absolute;
   top: 3rem;
-  left: 3rem;
-}
-.form-row {
-  color: #989898;
+  left: 28rem;
 }
 
-.form-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 10rem auto 0;
-}
-
-.title {
-  color: #989898;
+.signin-title {
   font-size: 3rem;
   font-weight: 700;
   color: #343434;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.msg {
-  color: #555555;
-  font-size: 1rem;
-  font-weight: 400;
-  margin-bottom: 3rem;
-}
-
-.label {
-  color: #555555;
-  font-size: 1.125rem;
-  font-weight: 400;
-}
-
-.form-control {
-  margin: 0.5rem auto 1.5rem;
-  width: 27rem;
-  height: 4rem;
-  border-radius: 0.8rem;
-  background-color: #ffffff;
-  border: 0.5px solid #989898;
-  color: #989898;
-  font-size: 1.25rem;
-  font-weight: 400;
-  padding: 0.5rem 1rem;
-  outline: none;
-}
-
-.visible {
-  width: 27rem;
-  height: 4rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 1.5rem;
-  margin: 0.5rem auto 1.5rem;
-}
-
-.visible .icon {
-  margin-left: -4rem;
-  padding-right: 3rem;
-  padding-bottom: 1rem;
-  color: #989898;
-}
-.details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* .agreement {
-  width: 33rem;
-  text-align: center;
-  font-size: 1rem;
-  font-weight: 500;
-  color: #9b9b9b;
-  padding-top: 1rem;
-} */
-
-.f-password {
-  color: #fcee21;
-  text-align: end;
+  padding: 1rem 0 1.5rem;
 }
 
 .signin-btn {
-  width: 27rem;
   height: 4rem;
   background-color: #fcee21;
   font-size: 1.25rem;
@@ -126,19 +25,18 @@ form {
   outline: none;
 }
 
-.or {
+.signin-or {
   display: flex;
   align-items: center;
   text-align: center;
-  width: 27rem;
   color: #343434;
   font-size: 1.5rem;
   font-weight: 500;
   padding: 1rem 0 1.5rem;
 }
 
-.or::before,
-.or::after {
+.signin-or::before,
+.signin-or::after {
   content: "";
   margin: 1rem auto;
   padding: 0rem 1rem;
@@ -147,7 +45,6 @@ form {
 }
 
 .signin-google {
-  width: 27rem;
   height: 4rem;
   background-color: #ffffff;
   font-size: 1.2rem;
@@ -160,13 +57,13 @@ form {
   outline: none;
 }
 
-.register {
+.signin-register {
   text-align: center;
   font-size: 1.25rem;
   color: #9b9b9b;
   padding-top: 0.7rem;
 }
 
-.register-signup {
+.signin-link {
   text-decoration: none;
 }
