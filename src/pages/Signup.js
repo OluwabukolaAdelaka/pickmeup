@@ -12,18 +12,16 @@ function Signup() {
     setVisibility(!visibility);
   };
   return (
-    <section className="d-flex flex-column justify-content-center align-items-center ">
+    <section className="container">
       <div className="row">
-        <div className="d-none d-md-block col-md-6 mt-4">
+        <div className="d-none d-md-block col-md-6 text-center px-0">
           <Link to="/">
-          <img src={SignUpImg} className="img-fluid relative" alt="sign in" />
+          <img src={SignUpImg} className="img-fluid" alt="sign in" />
             
           </Link>
         </div>
-        <div className="col-sm-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
-             <h3 className="signUpTitle">Join Us at Pickmeup</h3>
-             
-          
+        <div className="col-sm-12 col-md-6 px-5">
+             <h3 className="signUpTitle text-center">Join Us at Pickmeup</h3>
           <form>
           <div className="mb-3">
               <label htmlFor="exampleInputName1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>

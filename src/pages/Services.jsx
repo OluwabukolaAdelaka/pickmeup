@@ -17,14 +17,14 @@ const Services = () => {
         <div className="row text-center d-flex justify-content-center align-items-center">
           <div className="d-none col"></div>
           <div className="col-sm-12 col-md-8">
-            <div class="row row-cols-1 row-cols-md-2 g-4">
-              <div class="col">
-                <div class="card border-light">
-                  <div class="card-body">
-                    <h5 class="card-title service-title">
+            <div className="row row-cols-1 row-cols-md-2 g-4">
+              <div className="col">
+                <div className="card border-light">
+                  <div className="card-body">
+                    <h5 className="card-title service-title">
                       International Delivery
                     </h5>
-                    <p class="card-text service-msg">
+                    <p className="card-text service-msg">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Aliquam natus, modi consequatur ipsa praesentium neque
                       sint provident ad tempore corrupti repudiandae atque
@@ -35,11 +35,11 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card border-light">
-                  <div class="card-body">
-                    <h5 class="card-title service-title">Cargo Service</h5>
-                    <p class="card-text service-msg">
+              <div className="col">
+                <div className="card border-light">
+                  <div className="card-body">
+                    <h5 className="card-title service-title">Cargo Service</h5>
+                    <p className="card-text service-msg">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Aliquam natus, modi consequatur ipsa praesentium neque
                       sint provident ad tempore corrupti repudiandae atque
@@ -50,11 +50,11 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card border-light">
-                  <div class="card-body">
-                    <h5 class="card-title service-title">Import</h5>
-                    <p class="card-text service-msg">
+              <div className="col">
+                <div className="card border-light">
+                  <div className="card-body">
+                    <h5 className="card-title service-title">Import</h5>
+                    <p className="card-text service-msg">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Aliquam natus, modi consequatur ipsa praesentium neque
                       sint provident ad tempore corrupti repudiandae atque
@@ -65,11 +65,11 @@ const Services = () => {
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card border-light">
-                  <div class="card-body">
-                    <h5 class="card-title service-title">Consultancy</h5>
-                    <p class="card-text service-msg">
+              <div className="col">
+                <div className="card border-light">
+                  <div className="card-body">
+                    <h5 className="card-title service-title">Consultancy</h5>
+                    <p className="card-text service-msg">
                       Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                       Aliquam natus, modi consequatur ipsa praesentium neque
                       sint provident ad tempore corrupti repudiandae atque

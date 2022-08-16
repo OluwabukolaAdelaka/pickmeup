@@ -5,6 +5,7 @@ import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Signup from "./pages/Signup";
 import SignIn from "./pages/SignIn";
+import ForgotPassword from "./pages/ForgotPassword";
 import { Routes, Route} from "react-router-dom";
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
             <Route path="contact" element={<Contact />} />
             <Route path="signup" element={<Signup />} />
             <Route path="signin" element={<SignIn />} />
+            <Route path="forgotpassword" element={<ForgotPassword />} />
       </Routes>
     </>
   );

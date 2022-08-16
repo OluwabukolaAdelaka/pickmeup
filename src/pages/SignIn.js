@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import SignUpImg from "../assets/signup.jpg";
+import SignUpImg from "../assets/signin.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
 import { FcGoogle } from "react-icons/fc";
@@ -13,19 +13,18 @@ function SignIn() {
   };
 
   return (
-    <section className="d-flex flex-column justify-content-center align-items-center">
+    <section className="container">
       <div className="row">
-        <div className="d-none d-md-block col-md-6 mt-4">
-          
+        <div className="d-none d-md-block col-md-6 text-center px-0">
           <Link to="/">
           <img src={SignUpImg} className="img-fluid" alt="sign in" />
           </Link>
         </div>
         {/* Form Part */}
-        <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
-          <h3 className="signin-title">Welcome!</h3>
+        <div className="col-sm-12 col-md-6 px-5">
+          <h3 className="signin-title text-center">Welcome!</h3>
           <form>
-            <div className="mb-3">
+            <div className="mb-4">
               <label
                 htmlFor="exampleInputEmail1"
                 className="form-label"
@@ -41,7 +40,7 @@ function SignIn() {
                 style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-4">
               <label
                 htmlFor="exampleInputPassword1"
                 className="form-label"
@@ -82,7 +81,9 @@ function SignIn() {
                 </label>
               </div>
               <div>
-                <p>Forgot Password?</p>
+              <Link to="/forgotpassword" className="forgotpwd-link">
+                Forgot Password
+              </Link>
               </div>
             </div>
             <div className="d-grid col-12 mx-auto">
@@ -100,7 +101,7 @@ function SignIn() {
 
             <p className="signin-register">
               Don’t have an account?
-              <Link to="/signup" className="signin-link ps-1">
+              <Link to="/signup" className="signin-link ps-2">
                 <span style={{ color: "#343434", fontWeight: "bold" }}>
                    Sign Up
                 </span>

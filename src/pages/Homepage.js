@@ -10,7 +10,7 @@ import Contact from "./Contact";
 
 function Homepage() {
   return (
-    <>
+    <div className='container-fluid'>
       <Navigation/>
       <Hero/>
       <Services/>
@@ -19,7 +19,7 @@ function Homepage() {
       <About/>
       <Contact/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
