@@ -5,6 +5,11 @@
   padding: 1rem 0 1.5rem;
 }
 
+.signInErrorMsg {
+  color: red;
+  margin: 1rem auto;
+}
+
 .signin-btn {
   height: 4rem;
   background-color: #fcee21;

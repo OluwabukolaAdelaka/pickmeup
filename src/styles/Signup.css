@@ -21,6 +21,11 @@
   background-color: rgba(252, 238, 33, 0.7);
 }
 
+.signUpErrorMsg {
+  color: red;
+  margin: 1rem auto;
+}
+
 .signUpOr {
   display: flex;
   align-items: center;

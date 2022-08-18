@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {useFormik} from "formik";
+import { basicSchema } from "../schemas";
 import SignUpImg from "../assets/signup.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
@@ -7,10 +9,33 @@ import "../styles/Signup.css";
 
 function Signup() {
   const [visibility, setVisibility] = useState(false);
+  const [confirmVisibility, setConfirmVisibility] = useState(false);
 
   const toggleVisibility = () => {
     setVisibility(!visibility);
   };
+
+  const toggleConfirmVisibility = () => {
+    setConfirmVisibility(!confirmVisibility);
+  };
+
+  const onSubmit = async (values, actions) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
+  }
+
+  const {values, handleChange, errors, touched, handleSubmit, handleBlur} = useFormik({
+    initialValues: {
+      fullName: "",
+      email: "",
+      password: "",
+      confirmPassword: ""
+    },
+    validationSchema: basicSchema,
+    onSubmit
+  });
+  
+
   return (
     <section className="container">
       <div className="row">
@@ -22,58 +47,88 @@ function Signup() {
         </div>
         <div className="col-sm-12 col-md-6 px-5">
              <h3 className="signUpTitle text-center">Join Us at Pickmeup</h3>
-          <form>
+            
+            {/* Form */}
+          <form onSubmit={handleSubmit}>
           <div className="mb-3">
-              <label htmlFor="exampleInputName1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+              <label htmlFor="fullName" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
                 FULL NAME
               </label>
               <input
                 type="text"
+                id="fullName"
+                name="fullName"
+                value={values.fullName}
+                onChange={handleChange}
+                onBlur={handleBlur}
                 className="form-control"
-                style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+                style={{ backgroundColor: "#f7f4f4", height: "4rem" }}
               />
+              {errors.fullName && touched.fullName && <p className="signUpErrorMsg">{errors.fullName}</p>}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputEmail1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+              <label htmlFor="email" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
                 EMAIL
               </label>
               <input
                 type="email"
+                id="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
                 className="form-control"
                 placeholder="Example@gmail.com"
-                style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
+                style={{ backgroundColor: "#f7f4f4", height: "4rem" }}
               />
+              {errors.email && touched.email && <p className="signUpErrorMsg">{errors.email}</p>}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputPassword1" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+              <label htmlFor="password" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
                 PASSWORD
               </label>
               <div className="input-group">
-                <input type={visibility ? "text" : "password"} className="form-control" placeholder={visibility ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "3rem" }}/>
-                <span className="input-group-text" id="basic-addon2" onClick={toggleVisibility}>{visibility ? (
-                      <MdOutlineVisibility />
+                <input type={visibility ? "text" : "password"}
+                id="password"
+                name="password"
+                value={values.password}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className="form-control"
+                 placeholder={visibility  ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "4rem" }}/>
+                <span className="input-group-text" onClick={toggleVisibility}>{visibility ? (
+                      <MdOutlineVisibility/>
                     ) : (
                       <MdOutlineVisibilityOff />
                     )}</span>
                 
               </div>
+              {errors.password && touched.password && <p className="signUpErrorMsg">{errors.password}</p>}
             </div>
             <div className="mb-3">
-              <label htmlFor="exampleInputPassword2" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
+              <label htmlFor="confirmPassword" className="form-label" style={{color: "#555555", fontSize: "1.125rem"}}>
                 CONFIRM PASSWORD
               </label>
               <div className="input-group">
-                <input type={visibility ? "text" : "password"} className="form-control" placeholder={visibility ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "3rem" }} />
-                <span className="input-group-text" id="basic-addon2" onClick={toggleVisibility}>{visibility ? (
+                <input type={confirmVisibility ? "text" : "password"}
+                id="confirmPassword"
+                name="confirmPassword"
+                value={values.confirmPassword}
+                onChange={handleChange}
+                onBlur={handleBlur}
+                className="form-control"
+                 placeholder={confirmVisibility ? "password" : "********"} style={{ backgroundColor: "#f7f4f4", height: "4rem" }} />
+                <span className="input-group-text"  onClick={toggleConfirmVisibility}>{confirmVisibility ? (
                       <MdOutlineVisibility />
                     ) : (
                       <MdOutlineVisibilityOff />
                     )}</span>
               </div>
+              {errors.confirmPassword && touched.confirmPassword && <p className="signUpErrorMsg">{errors.confirmPassword}</p>}
             </div>
             
             <div className="d-grid col-12 mx-auto">
-              <button className="btn signUpBtn" type="button">
+              <button className="btn signUpBtn" type="submit">
                Create an account
               </button>
             </div>

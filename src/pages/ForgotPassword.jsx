@@ -1,9 +1,26 @@
 import React from "react";
+import { useFormik } from "formik";
+import * as yup from "yup";
 import SignUpImg from "../assets/signup.jpg";
 import { Link } from "react-router-dom";
 import "../styles/ForgotPassword.css";
 
 function ForgotPassword() {
+  const onSubmit = async (values, actions) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
+  };
+
+  const { values, handleChange, errors, touched, handleSubmit, handleBlur } =
+    useFormik({
+      initialValues: {
+        email: "",
+      },
+      validationSchema: yup.object({
+        email: yup.string().email("Invalid email address").required("Required"),
+      }),
+      onSubmit,
+    });
   return (
     <section className="container">
       <div className="row">
@@ -18,7 +35,7 @@ function ForgotPassword() {
           style={{ backgroundColor: "#e5e5e5" }}
         >
           <h3 className="forgotpwd-title text-center">Forgot Password?</h3>
-          <form>
+          <form onSubmit={handleSubmit}>
             <div className="mb-3">
               <label
                 htmlFor="exampleInputEmail1"
@@ -29,15 +46,22 @@ function ForgotPassword() {
               </label>
               <input
                 type="email"
+                id="email"
+                name="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
                 className="form-control"
-                id="exampleInputEmail1"
                 placeholder="Example@gmail.com"
                 style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
               />
+              {errors.email && touched.email && (
+                <p className="signUpErrorMsg">{errors.email}</p>
+              )}
             </div>
 
             <div className="d-grid col-12 mx-auto">
-              <button className="btn resetpwd-btn" type="button">
+              <button className="btn resetpwd-btn" type="submit">
                 <Link to="/mailMsg" className="mailMsg">
                   Reset Password
                 </Link>

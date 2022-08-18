@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import {useFormik} from "formik";
+import * as Yup from "yup";
 import SignUpImg from "../assets/signin.jpg";
 import { Link } from "react-router-dom";
 import { MdOutlineVisibility, MdOutlineVisibilityOff } from "react-icons/md";
@@ -12,6 +14,26 @@ function SignIn() {
     setVisibility(!visibility);
   };
 
+  const passwordRules = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,}$/;
+
+  const onSubmit = async (values, actions) => {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
+    actions.resetForm();
+    
+  }
+
+  const {values, handleChange, errors, touched, handleSubmit, handleBlur} = useFormik({
+    initialValues: { 
+      email: "",
+      password: "",
+    },
+    validationSchema: Yup.object({
+      email: Yup.string().email("Please enter a valid email address").required("Email is required"),
+      password: Yup.string().min(4).matches(passwordRules, {message: "Password must be minimum of 4 and include 1 uppercase letter, 1 lowercase letter, 1 numeric digit"}).required("Please enter your password"),
+    }),
+    onSubmit
+  });
+  
   return (
     <section className="container">
       <div className="row">
@@ -23,7 +45,8 @@ function SignIn() {
         {/* Form Part */}
         <div className="col-sm-12 col-md-6 px-5">
           <h3 className="signin-title text-center">Welcome!</h3>
-          <form>
+
+            <form onSubmit={handleSubmit}>
             <div className="mb-4">
               <label
                 htmlFor="exampleInputEmail1"
@@ -34,11 +57,16 @@ function SignIn() {
               </label>
               <input
                 type="email"
+                name="email"
+                id="email"
+                value={values.email}
+                onChange={handleChange}
+                onBlur={handleBlur}
                 className="form-control"
-                id="exampleInputEmail1"
                 placeholder="Example@gmail.com"
                 style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
               />
+              {errors.email && touched.email && <p className="signInErrorMsg">{errors.email}</p>}
             </div>
             <div className="mb-4">
               <label
@@ -51,12 +79,17 @@ function SignIn() {
               <div className="input-group">
                 <input
                   type={visibility ? "text" : "password"}
+                  name="password"
+                  id="password"
+                  value={values.password}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
                   className="form-control"
                   placeholder={visibility ? "password" : "********"}
                   style={{ backgroundColor: "#f7f4f4", height: "3rem" }}
                 />
                 <button
-                  className="btn btn-outline-secondary"
+                  className="btn btn-secondary"
                   type="button"
                   onClick={toggleVisibility}
                 >
@@ -67,6 +100,7 @@ function SignIn() {
                   )}
                 </button>
               </div>
+              {errors.password && touched.password && <p className="signInErrorMsg">{errors.password}</p>}
             </div>
 
             <div className="d-flex justify-content-between">
@@ -87,11 +121,10 @@ function SignIn() {
               </div>
             </div>
             <div className="d-grid col-12 mx-auto">
-              <button className="btn signin-btn" type="button">
-                Login
+              <button className="btn signin-btn" type="submit">
+               Login
               </button>
             </div>
-
             <span className="signin-or">OR</span>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signin-google" type="button">
