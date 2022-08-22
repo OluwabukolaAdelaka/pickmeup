@@ -60,10 +60,10 @@
   outline: none;
 }
 
-.signin-google:hover {
+/* .signin-google:hover {
   background-color: #343434;
   color: #ffffff;
-}
+} */
 
 .signin-register {
   text-align: center;
@@ -77,12 +77,26 @@
   cursor: pointer;
 }
 
-.forgotpwd-link {
+.forgotpwd-link,
+.btn-link {
   text-decoration: none;
   cursor: pointer;
   color: #343434;
 }
 
-.forgotpwd-link:hover {
+.forgotpwd-link:hover,
+.btn-link:hover {
+  color: #343434;
+}
+
+.google-btn-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #343434;
+}
+
+.google-btn-link:hover {
+  text-decoration: none;
+  cursor: pointer;
   color: #343434;
 }

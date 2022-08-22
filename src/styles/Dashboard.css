@@ -1,0 +1,56 @@
+/* .dashboard-section {
+  margin-top: 5rem;
+} */
+
+.hero-title,
+.bal-val {
+  color: #3e3e3e;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 54px;
+}
+
+.bal-cont {
+  margin: 0;
+}
+
+.bal-text {
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 2.25rem;
+  padding-top: 1rem;
+}
+
+.bal-sign {
+  font-size: 2rem;
+  color: #3e3e3e;
+  padding-right: 1rem;
+}
+
+.hero-btn {
+  background: #ffffff;
+  border: none;
+  margin: 0 1rem 0.5rem 0;
+  font-size: 1rem;
+}
+
+.hero-btn-link {
+  color: #3e3e3e;
+}
+
+/* Section */
+.section-card {
+  background: linear-gradient(
+    180deg,
+    rgba(251, 237, 49, 0.5) 99.99%,
+    rgba(251, 237, 49, 0) 100%
+  );
+  border-radius: 0.9rem;
+}
+
+.section-title {
+  padding-top: 3rem;
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: #3e3e3e;
+}

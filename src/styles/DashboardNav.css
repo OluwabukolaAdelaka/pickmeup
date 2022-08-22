@@ -1,0 +1,22 @@
+.dbNav-links {
+  margin: auto 2rem !important;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  text-decoration: none;
+}
+.dbNav-links:hover {
+  color: #3e3e3e;
+}
+
+.dbNav-abt {
+  background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
+  width: 8rem;
+  height: 2.5rem;
+  margin-left: 2rem;
+  border: none;
+  border-radius: 0.9rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #3e3e3e;
+}

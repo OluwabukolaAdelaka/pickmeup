@@ -122,13 +122,17 @@ function SignIn() {
             </div>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signin-btn" type="submit">
+              <Link to="/dashboard" className="btn-link">
                Login
+              </Link>
               </button>
             </div>
             <span className="signin-or">OR</span>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signin-google" type="button">
+              <Link to="/dashboard" className="google-btn-link">
                 <FcGoogle size={30} /> Sign in with Google
+              </Link>
               </button>
             </div>
 
