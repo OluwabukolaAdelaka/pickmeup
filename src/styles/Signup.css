@@ -13,6 +13,7 @@
   text-align: center;
   border-radius: 0.5rem;
   margin-top: 1.5rem;
+  padding-top: 1rem;
   border: none;
   outline: none;
 }
@@ -21,9 +22,19 @@
   background-color: rgba(252, 238, 33, 0.9);
 }
 
-/* .signUpBtn:disabled {
+.signUpBtnDisabled {
   background-color: rgba(252, 238, 33, 0.5);
-} */
+  pointer-events: none;
+  height: 4rem;
+  font-size: 1.3rem;
+  color: #343434;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border: none;
+  outline: none;
+}
 
 .signUpErrorMsg {
   color: red;

@@ -131,12 +131,12 @@ const Options = () => {
             </div>
 
             {/* desktop options card */}
-            <div className="d-none d-md-block card-img-overlay pt-5 absolute">
+            <div className="d-none d-md-block card-img-overlay pt-3 absolute">
               <h3 className="text-center mt-4  mycard-hero-title">Why Us?</h3>
-              <div className="row row-cols-1 row-cols-md-3 g-4 mt-5">
+              <div className="row row-cols-1 row-cols-md-3 g-4 mt-2">
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-2 border-light"
                     style={{ backgroundColor: "#efefef" }}
                   >
                     <div className="card-body">
@@ -157,7 +157,7 @@ const Options = () => {
                 </div>
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-2 border-light"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">
@@ -166,16 +166,15 @@ const Options = () => {
                         International Partners
                       </h5>
                       <p className="card-text mycard-msg">
-                        We parner with international logistics company for our
-                        express delivery aand cargo delivery to avoid
-                        dissapointment.
+                        We partner with international logistics company for
+                        express and cargo delivery to avoid dissapointment.
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-3 border-light"
                     style={{ backgroundColor: "#e5e5e5" }}
                   >
                     <div className="card-body">
@@ -191,7 +190,7 @@ const Options = () => {
                 </div>
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-2 border-light"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">
@@ -206,7 +205,7 @@ const Options = () => {
                 </div>
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-2 border-light"
                     style={{ backgroundColor: "#d9d9d9" }}
                   >
                     <div className="card-body">
@@ -221,7 +220,7 @@ const Options = () => {
                 </div>
                 <div className="col text-center">
                   <div
-                    className="card p-4 border-light"
+                    className="card p-2 border-light"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">

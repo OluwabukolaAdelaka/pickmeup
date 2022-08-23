@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+//import { useNavigate  } from "react-router-dom";
 import {useFormik} from "formik";
 import { basicSchema } from "../schemas";
 import SignUpImg from "../assets/signup.jpg";
@@ -25,7 +26,7 @@ function Signup() {
     console.log(actions);
   }
 
-  const {values, handleChange, errors, touched, handleSubmit, handleBlur} = useFormik({
+  const {values, handleChange, errors, touched, isValid, handleSubmit, handleBlur} = useFormik({
     initialValues: {
       fullName: "",
       email: "",
@@ -36,6 +37,11 @@ function Signup() {
     onSubmit
   });
   
+  // navigate sign up to sign in
+  // let navigate = useNavigate();
+  // function handleClick(path) {
+  //   navigate.push(path);
+  // }
 
   return (
     <section className="container">
@@ -129,19 +135,11 @@ function Signup() {
               {errors.confirmPassword && touched.confirmPassword && <p className="signUpErrorMsg">{errors.confirmPassword}</p>}
             </div>
             
-              {/* <div className="d-grid col-12 mx-auto">
-                <button className="btn signUpBtn" disabled={!isValid} type="submit">
-                Create an account
-                </button>
-              </div> */}
-            
-            <Link to= "/signin" className="text-decoration-none">
               <div className="d-grid col-12 mx-auto">
-              <button className="btn signUpBtn" type="submit" >
-              Create an account
-              </button>
+                <Link className={isValid ? "btn signUpBtn" : "btn signUpBtnDisabled"} role="button"
+                 to="/signin">Create an account</Link>
               </div>
-            </Link>
+            
             <span className="signUpOr">OR</span>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signUpGoogle" type="button">
