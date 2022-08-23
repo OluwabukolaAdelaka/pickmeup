@@ -136,9 +136,10 @@ function Signup() {
             </div>
             
               <div className="d-grid col-12 mx-auto">
-                <Link className={isValid ? "btn signUpBtn" : "btn signUpBtnDisabled"} role="button"
+                <Link className={isValid ? "btn signUpBtn" : "btn signUpBtnDisabled"} type="submit" role="button"
                  to="/signin">Create an account</Link>
               </div>
+              
             
             <span className="signUpOr">OR</span>
             <div className="d-grid col-12 mx-auto">

@@ -19,10 +19,10 @@ function SignIn() {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
-    
+    console.log(values);
   }
 
-  const {values, handleChange, errors, touched, handleSubmit, handleBlur} = useFormik({
+  const {values, handleChange, errors, isValid, touched, handleSubmit, handleBlur} = useFormik({
     initialValues: { 
       email: "",
       password: "",
@@ -121,12 +121,10 @@ function SignIn() {
               </div>
             </div>
             <div className="d-grid col-12 mx-auto">
-              <button className="btn signin-btn" type="submit">
-              <Link to="/dashboard" className="btn-link">
-               Login
-              </Link>
-              </button>
-            </div>
+                <Link className={isValid ? "btn signin-btn" : "btn sign-in-btn-disabled"} type="submit" role="button"
+                 to="/dashboard">Login</Link>
+              </div>
+            
             <span className="signin-or">OR</span>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signin-google" type="button">

@@ -13,12 +13,13 @@
 .signin-btn {
   height: 4rem;
   background-color: #fcee21;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   font-weight: 600;
   color: #343434;
   text-align: center;
   border-radius: 0.5rem;
   margin-top: 2rem;
+  padding-top: 1rem;
   margin-bottom: 1rem;
   border: none;
   outline: none;
@@ -26,6 +27,21 @@
 
 .signin-btn:hover {
   background-color: rgba(252, 238, 33, 0.7);
+}
+
+.sign-in-btn-disabled {
+  background-color: rgba(252, 238, 33, 0.5);
+  pointer-events: none;
+  height: 4rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #343434;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border: none;
+  outline: none;
 }
 
 .signin-or {
