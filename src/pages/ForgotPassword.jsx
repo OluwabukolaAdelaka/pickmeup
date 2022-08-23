@@ -2,6 +2,7 @@ import React from "react";
 import { useFormik } from "formik";
 import * as yup from "yup";
 import SignUpImg from "../assets/signup.jpg";
+import Lock from "../assets/lock.png";
 import { Link } from "react-router-dom";
 import "../styles/ForgotPassword.css";
 
@@ -61,11 +62,75 @@ function ForgotPassword() {
             </div>
 
             <div className="d-grid col-12 mx-auto">
-              <button className="btn resetpwd-btn" type="submit">
+              {/* <!-- Button trigger modal --> */}
+              <button
+                type="button"
+                className="btn resetpwd-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                Reset Password
+              </button>
+
+              {/* <!-- Modal --> */}
+              <div
+                className="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div className="modal-dialog">
+                  <div className="modal-content">
+                    <div className="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div className="modal-body text-center p-5">
+                      <img
+                        src={Lock}
+                        className="card-img-top img-fluid mb-4"
+                        alt="..."
+                        style={{
+                          width: "25%",
+                          height: "auto",
+                        }}
+                      />
+                      <h6
+                        className="card-title pb-2"
+                        style={{
+                          color: "#1e1e1e",
+                          fontWeight: "600",
+                          fontSize: "2rem",
+                        }}
+                      >
+                        Check your email
+                      </h6>
+                      <p
+                        className="card-text"
+                        style={{
+                          color: "#1e1e1e",
+                          fontWeight: "700",
+                          fontSize: "1rem",
+                        }}
+                      >
+                        We have just sent you the password reset link. click the
+                        link in the email and follow the instruction to reset
+                        your password.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              {/* <button className="btn resetpwd-btn" type="submit">
                 <Link to="/mailMsg" className="mailMsg">
                   Reset Password
                 </Link>
-              </button>
+              </button> */}
             </div>
             <p className="forgotpwd-register text-center">
               Remember your password?
@@ -78,6 +143,9 @@ function ForgotPassword() {
           </form>
         </div>
       </div>
+      {/* <Link to="/mailMsg" className="mailMsg">
+                  Reset Password
+                </Link> */}
     </section>
   );
 }
