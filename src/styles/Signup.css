@@ -8,7 +8,7 @@
 .signUpBtn {
   height: 4rem;
   background-color: #fcee21;
-  font-size: 1.25rem;
+  font-size: 1.3rem;
   color: #343434;
   text-align: center;
   border-radius: 0.5rem;
@@ -18,8 +18,12 @@
 }
 
 .signUpBtn:hover {
-  background-color: rgba(252, 238, 33, 0.7);
+  background-color: rgba(252, 238, 33, 0.9);
 }
+
+/* .signUpBtn:disabled {
+  background-color: rgba(252, 238, 33, 0.5);
+} */
 
 .signUpErrorMsg {
   color: red;

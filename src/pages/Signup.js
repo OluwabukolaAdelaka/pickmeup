@@ -8,8 +8,8 @@ import { FcGoogle } from "react-icons/fc";
 import "../styles/Signup.css";
 
 function Signup() {
-  const [visibility, setVisibility] = useState(false);
-  const [confirmVisibility, setConfirmVisibility] = useState(false);
+  const [visibility, setVisibility] = useState(true);
+  const [confirmVisibility, setConfirmVisibility] = useState(true);
 
   const toggleVisibility = () => {
     setVisibility(!visibility);
@@ -22,6 +22,7 @@ function Signup() {
   const onSubmit = async (values, actions) => {
     await new Promise((resolve) => setTimeout(resolve, 1000));
     actions.resetForm();
+    console.log(actions);
   }
 
   const {values, handleChange, errors, touched, handleSubmit, handleBlur} = useFormik({
@@ -62,6 +63,7 @@ function Signup() {
                 onChange={handleChange}
                 onBlur={handleBlur}
                 className="form-control"
+                placeholder="Enter your full name"
                 style={{ backgroundColor: "#f7f4f4", height: "4rem" }}
               />
               {errors.fullName && touched.fullName && <p className="signUpErrorMsg">{errors.fullName}</p>}
@@ -127,11 +129,19 @@ function Signup() {
               {errors.confirmPassword && touched.confirmPassword && <p className="signUpErrorMsg">{errors.confirmPassword}</p>}
             </div>
             
-            <div className="d-grid col-12 mx-auto">
-              <button className="btn signUpBtn" type="submit">
-               Create an account
+              {/* <div className="d-grid col-12 mx-auto">
+                <button className="btn signUpBtn" disabled={!isValid} type="submit">
+                Create an account
+                </button>
+              </div> */}
+            
+            <Link to= "/signin" className="text-decoration-none">
+              <div className="d-grid col-12 mx-auto">
+              <button className="btn signUpBtn" type="submit" >
+              Create an account
               </button>
-            </div>
+              </div>
+            </Link>
             <span className="signUpOr">OR</span>
             <div className="d-grid col-12 mx-auto">
               <button className="btn signUpGoogle" type="button">

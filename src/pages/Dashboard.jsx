@@ -51,7 +51,7 @@ function Dashboard() {
                 <img src={WalletIcon} className="img-fluid" alt="" />
               </div>
               <>
-                <button type="button" className="hero-btn">
+                <button type="button" className="db-hero-btn">
                   <Link className="text-decoration-none hero-btn-link" to="/">
                     <img
                       src={FundWalletIcon}
@@ -61,7 +61,7 @@ function Dashboard() {
                     Fund wallet
                   </Link>
                 </button>
-                <button type="button" className="hero-btn">
+                <button type="button" className="db-hero-btn">
                   <Link className="text-decoration-none hero-btn-link" to="/">
                     <img
                       src={TransactionIcon}
