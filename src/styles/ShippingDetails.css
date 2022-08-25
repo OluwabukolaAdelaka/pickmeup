@@ -1,0 +1,58 @@
+:root {
+  --offcanvas-width: 18rem !important;
+  --topNavbarHeight: 4.5rem !important;
+}
+
+.sidebarNav {
+  width: var(--offcanvas-width) !important;
+}
+
+.shipment-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #3e3e3e;
+}
+.shipment-list {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  color: #343434;
+}
+
+.shipment-list .active {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3e3e3e;
+}
+
+.main-title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #3e3e3e;
+  text-align: center;
+}
+
+.label {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3e3e3e;
+}
+
+.main-input {
+  height: 4rem;
+  color: #343434;
+}
+@media (min-width: 992px) {
+  .offcanvas-backdrop::before {
+    display: none;
+  }
+
+  main {
+    margin-left: var(--offcanvas-width) !important;
+  }
+  .sidebarNav {
+    transform: none !important;
+    visibility: visible !important;
+    top: var(--topNavbarHeight) !important;
+    height: calc(100% - var(--topNavbarHeight)) !important;
+  }
+}

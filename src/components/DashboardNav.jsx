@@ -8,7 +8,7 @@ import "../styles/DashboardNav.css";
 
 function DashboardNav() {
   return (
-    <nav className="navbar navbar-expand-lg border-dark border-bottom border-2 sticky-top">
+    <nav className="navbar navbar-expand-lg border-dark bg-white border-bottom border-2 sticky-top">
       <div className="container-fluid">
         <img src={Logo} className="" alt="company logo" />
         <button
@@ -23,7 +23,7 @@ function DashboardNav() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto mt-3 mt-md-0">
             <li className="nav-item">
               <Link className="nav-link dbNav-links" to="/">
                 Account
@@ -35,7 +35,7 @@ function DashboardNav() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link dbNav-links" to="/">
+              <Link className="nav-link dbNav-links" to="/shipping">
                 Ship Now
                 <img
                   src={ShipIcon}
