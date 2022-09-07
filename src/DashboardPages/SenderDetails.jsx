@@ -2,104 +2,164 @@ import React from "react";
 
 function SenderDetails() {
   return (
-    <div className="container">
-      <main className="mt-5 pt-3 px-5">
-        <p className="main-title">Please provide sender's details</p>
-        <form className="row g-4">
-          <div className="col-12">
+    <main className="mt-5 pt-3 px-5">
+      <form className="row g-4">
+        <div className="col">
+          <p className="main-title">Pickup Details</p>
+          <div className="col">
             <label htmlFor="fullName" className="form-label label">
-              Full Name
+              Sender
             </label>
             <input
               type="text"
               className="form-control main-input"
-              placeholder="Oluwafunmi Daniel"
+              placeholder="Name &amp; Surname"
               id="fullName"
             />
           </div>
-          <div className="col-md-4">
-            <label htmlFor="email" className="form-label label">
-              Email address
+          <div className="col">
+            <label htmlFor="address" className="form-label label">
+              Address
             </label>
             <input
-              type="email"
+              type="text"
               className="form-control main-input"
-              placeholder="johnstone@gmail.com"
-              id="email"
+              placeholder="Street name, number, &amp; other details"
+              id="address"
             />
           </div>
-          <div className="col-md-4">
+          <div className="col">
+            <label htmlFor="landmark" className="form-label label">
+              Nearest busstop/Landmark
+            </label>
+            <input
+              type="text"
+              className="form-control main-input"
+              placeholder="Busstop or Landmark"
+              id="landmark"
+            />
+          </div>
+          <div className="col">
+            <label htmlFor="addInfo" className="form-label label">
+              Additional Info - Optional
+            </label>
+            <input
+              type="text"
+              className="form-control main-input"
+              placeholder="Name or number"
+              id="addInfo"
+            />
+          </div>
+          <div className="col">
             <label htmlFor="phoneNumber" className="form-label label">
               Phone number
             </label>
             <input
-              type="text"
-              placeholder="+44 (81) 223 344 56"
+              type="tel"
               className="form-control main-input"
               id="phoneNumber"
             />
           </div>
-          <div className="col-md-4">
-            <label htmlFor="postalCode" className="form-label label">
-              Postal code
+        </div>
+        <div className="col">
+          <p className="main-title">Delivery Details</p>
+          <div className="col">
+            <label htmlFor="country" className="form-label label">
+              Country
             </label>
             <input
               type="text"
               className="form-control main-input"
-              id="postalCode"
-              placeholder="000000"
+              id="country"
+              placeholder="Country"
             />
           </div>
-          <div className="col-12">
-            <label htmlFor="delivery" className="form-label label">
-              Delivery
+          <div className="col">
+            <label htmlFor="receiver" className="form-label label">
+              Receiver
             </label>
             <input
               type="text"
               className="form-control main-input"
-              id="delivery"
-              placeholder="20, Aguda Street, Surulere"
+              id="receiver"
+              placeholder="Name &amp; Surname"
+            />
+          </div>
+          <div className="col">
+            <label htmlFor="address" className="form-label label">
+              Address
+            </label>
+            <input
+              type="text"
+              className="form-control main-input"
+              placeholder="Street name, number, &amp; other details"
+              id="address"
+            />
+          </div>
+          <div className="row">
+            <div className="col-6">
+              <label htmlFor="zipCode" className="form-label label">
+                Zip Code
+              </label>
+              <input
+                type="text"
+                className="form-control main-input"
+                id="zipCode"
+                placeholder="75002"
+              />
+            </div>
+            <div className="col-6">
+              <label htmlFor="city" className="form-label label">
+                Town/City
+              </label>
+              <input
+                type="text"
+                className="form-control main-input"
+                id="city"
+                placeholder="Paris"
+              />
+            </div>
+          </div>
+          <div className="col">
+            <label htmlFor="addInfo" className="form-label label">
+              Additional Info - Optional
+            </label>
+            <input
+              type="text"
+              className="form-control main-input"
+              placeholder="Name or number"
+              id="addInfo"
             />
           </div>
 
-          <div className="col-md-6">
-            <label htmlFor="state" className="form-label label">
-              State
+          <div className="col">
+            <label htmlFor="phoneNumber" className="form-label label">
+              Phone number
             </label>
-            <select
-              class="form-select form-select-lg"
-              aria-label=".form-select-sm example"
-            >
-              <option>Select state</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="city" className="form-label label">
-              City
-            </label>
-            <select
-              class="form-select form-select-lg"
-              aria-label=".form-select-sm example"
-            >
-              <option>Select city</option>
-              <option>...</option>
-            </select>
-          </div>
+            <div className="col input-group mb-3">
+              <div class="input-group-prepend ">
+                <span className="" id="basic-addon3">
+                  <select className="form-select">
+                    <option selected>+33</option>
+                    <option value="+234">+234</option>
+                    <option value="+233">+233</option>
+                    <option value="+33">+33</option>
+                  </select>
+                </span>
+              </div>
 
-          <div className="col-md-6">
-            <button type="button" className="btn btn-primary">
-              Go Back
-            </button>
+              <input
+                type="tel"
+                class="form-control"
+                placeholder=""
+                aria-label="Example text with button addon"
+                aria-describedby="button-addon1"
+              />
+            </div>
           </div>
-          <div className="col-md-6">
-            <button type="button" className="btn btn-primary">
-              Continue
-            </button>
-          </div>
-        </form>
-      </main>
-    </div>
+        </div>
+      </form>
+    </main>
   );
 }
 

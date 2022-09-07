@@ -1,12 +1,3 @@
-:root {
-  --offcanvas-width: 18rem !important;
-  --topNavbarHeight: 4.5rem !important;
-}
-
-.sidebarNav {
-  width: var(--offcanvas-width) !important;
-}
-
 .shipment-title {
   font-size: 2rem;
   font-weight: 600;
@@ -28,11 +19,10 @@
   font-size: 2rem;
   font-weight: 500;
   color: #3e3e3e;
-  text-align: center;
 }
 
 .label {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #3e3e3e;
 }
@@ -40,8 +30,35 @@
 .main-input {
   height: 4rem;
   color: #343434;
+  margin-bottom: 2rem;
 }
-@media (min-width: 992px) {
+
+/* .main-input:focus {
+  outline: none;
+} */
+
+.btn-container {
+  display: flex;
+  margin-top: 4rem;
+}
+
+.go-back-btn {
+  border: 1px solid #fcee21;
+  color: #3e3e3e;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.continue-btn {
+  background-color: #fcee21;
+  color: #3e3e3e;
+  padding: 0.5rem 3rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* @media (min-width: 992px) {
   .offcanvas-backdrop::before {
     display: none;
   }
@@ -49,10 +66,15 @@
   main {
     margin-left: var(--offcanvas-width) !important;
   }
+
+  .btn-container {
+    margin-left: var(--offcanvas-width) !important;
+  }
+
   .sidebarNav {
     transform: none !important;
     visibility: visible !important;
     top: var(--topNavbarHeight) !important;
     height: calc(100% - var(--topNavbarHeight)) !important;
   }
-}
+} */

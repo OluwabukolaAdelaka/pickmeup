@@ -2,105 +2,74 @@ import React from "react";
 
 function ItemDescription() {
   return (
-    <div className="container">
-      {/* Main content */}
-      <main className="mt-5 pt-3 px-5">
-        <p className="main-title">Please provide sender's details</p>
-        <form className="row g-4">
-          <div className="col-12">
-            <label htmlFor="fullName" className="form-label label">
-              Full Name
-            </label>
-            <input
-              type="text"
-              className="form-control main-input"
-              placeholder="Oluwafunmi Daniel"
-              id="fullName"
-            />
-          </div>
-          <div className="col-md-4">
-            <label htmlFor="email" className="form-label label">
-              Email address
-            </label>
-            <input
-              type="email"
-              className="form-control main-input"
-              placeholder="johnstone@gmail.com"
-              id="email"
-            />
-          </div>
-          <div className="col-md-4">
-            <label htmlFor="phoneNumber" className="form-label label">
-              Phone number
-            </label>
-            <input
-              type="text"
-              placeholder="+44 (81) 223 344 56"
-              className="form-control main-input"
-              id="phoneNumber"
-            />
-          </div>
-          <div className="col-md-4">
-            <label htmlFor="postalCode" className="form-label label">
-              Postal code
-            </label>
-            <input
-              type="text"
-              className="form-control main-input"
-              id="postalCode"
-              placeholder="000000"
-            />
-          </div>
-          <div className="col-12">
-            <label htmlFor="delivery" className="form-label label">
-              Delivery
-            </label>
-            <input
-              type="text"
-              className="form-control main-input"
-              id="delivery"
-              placeholder="20, Aguda Street, Surulere"
-            />
-          </div>
+    <>
+      <p className="main-title">Enter Details of item you want to ship</p>
+      <div class="card">
+        <div class="card-body">
+          <form className="row g-4">
+            <div className="col-md-6">
+              <label htmlFor="itemCategory" className="form-label label">
+                Select item category
+              </label>
+              <select
+                className="form-select form-select-lg main-input"
+                aria-label="form-select-lg"
+              >
+                <option>Kitchen wares</option>
+                <option>Electronics</option>
+                <option>Batteries</option>
+                <option>Beauty</option>
+              </select>
+            </div>
+            <div className="col-md-6">
+              <label htmlFor="itemValue" className="form-label label">
+                Item value()
+              </label>
+              <input
+                type="text"
+                className="form-control main-input"
+                placeholder="Oluwafunmi Daniel"
+                id="itemValue"
+              />
+            </div>
+            <div className="col-12">
+              <label htmlFor="details" className="form-label label">
+                Detailed item description
+              </label>
 
-          <div className="col-md-6">
-            <label htmlFor="state" className="form-label label">
-              State
-            </label>
-            <select
-              class="form-select form-select-lg"
-              aria-label=".form-select-sm example"
-            >
-              <option>Select state</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div className="col-md-6">
-            <label htmlFor="city" className="form-label label">
-              City
-            </label>
-            <select
-              class="form-select form-select-lg"
-              aria-label=".form-select-sm example"
-            >
-              <option>Select city</option>
-              <option>...</option>
-            </select>
-          </div>
-
-          <div className="col-md-6">
-            <button type="button" className="btn btn-primary">
-              Go Back
-            </button>
-          </div>
-          <div className="col-md-6">
-            <button type="button" className="btn btn-primary">
-              Continue
-            </button>
-          </div>
-        </form>
-      </main>
-    </div>
+              <textarea
+                className="form-control"
+                placeholder="Enter the detailed description of the item you want to ship"
+                id="details"
+                style={{ height: "10rem" }}
+              ></textarea>
+            </div>
+            <div className="col-md-6">
+              <label htmlFor="weight" className="form-label label">
+                Quantity
+              </label>
+              <input
+                type="text"
+                className="form-control main-input"
+                placeholder="20"
+                id="weight"
+              />
+            </div>
+            <div className="col-md-6">
+              <label htmlFor="weight" className="form-label label">
+                Weight(KG)
+              </label>
+              <input
+                type="text"
+                className="form-control main-input"
+                placeholder="Enter weight"
+                id="weight"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
 
