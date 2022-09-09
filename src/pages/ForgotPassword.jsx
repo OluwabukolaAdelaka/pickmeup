@@ -76,7 +76,7 @@ function ForgotPassword() {
               <div
                 className="modal fade"
                 id="exampleModal"
-                tabindex="-1"
+                tabIndex="-1"
                 aria-labelledby="exampleModalLabel"
                 aria-hidden="true"
               >
@@ -85,7 +85,7 @@ function ForgotPassword() {
                     <div className="modal-header">
                       <button
                         type="button"
-                        class="btn-close"
+                        className="btn-close"
                         data-bs-dismiss="modal"
                         aria-label="Close"
                       ></button>
