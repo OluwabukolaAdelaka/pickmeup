@@ -5,6 +5,7 @@ import "../styles/ShippingDetails.css";
 import ItemDescription from "./ItemDescription";
 import OrderSummary from "./OrderSummary";
 import SenderDetails from "./SenderDetails";
+import Payment from "./Payment";
 
 function ShippingDetails() {
   const { currentStep } = useContext(MainContext);
@@ -20,42 +21,11 @@ function ShippingDetails() {
 
       case 3:
         return <OrderSummary />;
+
+      case 4:
+        return <Payment />;
     }
   }
-
-  // const [values, setValues] = useState({
-  //   fullNameSender: "",
-  //   addressSender: "",
-  //   landMark: "",
-  //   addInfoSender: "",
-  //   phoneNumberSender: "",
-  //   country: "",
-  //   fullNameReceiver: "",
-  //   addressReceiver: "",
-  //   zipCode: "",
-  //   city: "",
-  //   addInfoReceiver: "",
-  //   phoneNumberReceiver: "",
-  //   itemCategory: "",
-  //   itemValue: "",
-  //   itemDetails: "",
-  //   itemQty: "",
-  //   itemWeight: "",
-  // });
-
-  // function DisplayPages() {
-  //   if (page === 0) {
-  //     return <SenderDetails />;
-  //   } else if (page === 1) {
-  //     return <ItemDescription />;
-  //   } else {
-  //     return <OrderSummary />;
-  //   }
-  // }
-
-  // const handleChange = (input) => (e) => {
-  //   setValues({ [input]: e.target.value });
-  // };
 
   return (
     <div className="container-fluid mb-5">
@@ -65,32 +35,6 @@ function ShippingDetails() {
 
       <div className="container ">
         <>{displayPages(currentStep)}</>
-        {/* <div className="row btn-container text-center">
-          <div className="col-md-6">
-            <button
-              type="button"
-              className="go-back-btn btn btn-lg"
-              onClick={() => {
-                setPage((currPage) => currPage - 1);
-              }}
-              disabled={page === 0}
-            >
-              Go Back
-            </button>
-          </div>
-          <div className="col-md-6">
-            <button
-              type="button"
-              className="continue-btn btn btn-lg"
-              onClick={() => {
-                setPage((currPage) => currPage + 1);
-              }}
-              disabled={page === page.length - 1}
-            >
-              Continue
-            </button>
-          </div>
-        </div> */}
       </div>
     </div>
   );

@@ -6,7 +6,9 @@ function OrderSummary() {
   const { finalValues, setCurrentStep } = useContext(MainContext);
   return (
     <main className="container">
-      <p className="main-title mt-5">Review your shipping information</p>
+      <p className="main-title mt-5 text-center">
+        Review your shipping information
+      </p>
       <div className="card mb-3">
         <div className="card-body">
           <div>

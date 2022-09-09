@@ -1,0 +1,17 @@
+.payment-hero {
+  color: rgba(62, 62, 62, 0.5);
+  font-weight: 600;
+}
+
+.payment-title {
+  color: #3e3e3e;
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+}
+
+.payment-text {
+  color: #3e3e3e;
+  font-size: 1rem;
+  font-weight: 400;
+}
