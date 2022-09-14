@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import "react-step-progress-bar/styles.css";
-import { ProgressBar, Step } from "react-step-progress-bar";
 import { MainContext } from "../components/ShipContext";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { Link } from "react-router-dom";
@@ -11,9 +10,21 @@ import OrderSummary from "./OrderSummary";
 import SenderDetails from "./SenderDetails";
 import Payment from "./Payment";
 import Complete from "./Complete";
+import StepNavigation from "./StepNavigation";
 
 function ShippingDetails() {
-  const { currentStep } = useContext(MainContext);
+  const labelArray = [
+    "Sender Details",
+    "Item Description",
+    "Summary",
+    "Payment",
+    "Complete",
+  ];
+  const { currentStep, setCurrentStep } = useContext(MainContext);
+
+  function updateStep(step) {
+    setCurrentStep(step);
+  }
 
   function displayPages(step) {
     // eslint-disable-next-line default-case
@@ -36,45 +47,22 @@ function ShippingDetails() {
   }
 
   return (
-    <div className="container-fluid mb-5">
+    <div
+      className="container-fluid mb-5"
+      style={{ backgroundColor: "#eeeeee" }}
+    >
       <nav className="navbar navbar-expand-lg bg-white border-dark border-bottom border-1 sticky-top">
         <img src={Logo} className="me-auto" alt="company logo" />
       </nav>
 
-      <div className="container mt-5">
-        <Link to="/dashboard" className="absolute">
-          <MdArrowBackIosNew size={20} className="back-icon mb-3" />
-        </Link>
-        <ProgressBar
-          percent={((currentStep - 1) * 100) / 4}
-          filledBackground="#fcee21"
-        >
-          <Step transition="scale">
-            {({ accomplished }) => (
-              <div className={`step ${accomplished ? "completed" : ""}`}>1</div>
-            )}
-          </Step>
-          <Step transition="scale">
-            {({ accomplished }) => (
-              <div className={`step ${accomplished ? "completed" : ""}`}>2</div>
-            )}
-          </Step>
-          <Step transition="scale">
-            {({ accomplished }) => (
-              <div className={`step ${accomplished ? "completed" : ""}`}>3</div>
-            )}
-          </Step>
-          <Step transition="scale">
-            {({ accomplished }) => (
-              <div className={`step ${accomplished ? "completed" : ""}`}>4</div>
-            )}
-          </Step>
-          <Step transition="scale">
-            {({ accomplished }) => (
-              <div className={`step ${accomplished ? "completed" : ""}`}>5</div>
-            )}
-          </Step>
-        </ProgressBar>
+      <div className="container mt-5 pb-5">
+        <div className="progressContainer">
+          <Link to="/dashboard">
+            <MdArrowBackIosNew size={20} className="back-icon mb-3" />
+          </Link>
+          {/* custom progressbar */}
+          <StepNavigation labelArray={labelArray} updateStep={updateStep} />
+        </div>
 
         <>{displayPages(currentStep)}</>
       </div>

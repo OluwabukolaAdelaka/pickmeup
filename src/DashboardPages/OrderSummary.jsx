@@ -5,7 +5,7 @@ import { MdEdit } from "react-icons/md";
 function OrderSummary() {
   const { finalValues, setCurrentStep } = useContext(MainContext);
   return (
-    <main className="container">
+    <main className="container mt-5">
       <p className="main-title mt-5 text-center">
         Review your shipping information
       </p>

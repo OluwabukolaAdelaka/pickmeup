@@ -8,7 +8,7 @@ function Shipping() {
   return (
     <>
       {/* Navbar Start */}
-      <div className="container">
+      <div className="container" style={{ backgroundColor: "#eeeeee" }}>
         <nav className="navbar navbar-expand-lg border-dark bg-white border-bottom border-1 sticky-top">
           <img src={Logo} className="" alt="company logo" />
           <button

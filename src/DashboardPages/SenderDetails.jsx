@@ -5,7 +5,7 @@ function SenderDetails() {
   const { values, setValues, setCurrentStep } = useContext(MainContext);
 
   return (
-    <main className="mt-5 pt-3 px-5">
+    <main className="container mt-5">
       <form className="row g-4">
         <div className="col">
           <p className="main-title">Pickup Details</p>

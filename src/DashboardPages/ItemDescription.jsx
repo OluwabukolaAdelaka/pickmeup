@@ -6,7 +6,7 @@ function ItemDescription() {
     useContext(MainContext);
 
   return (
-    <>
+    <div className="container mt-5">
       <p className="main-title mt-5">Enter Details of item you want to ship</p>
       <div className="card">
         <div className="card-body">
@@ -114,7 +114,7 @@ function ItemDescription() {
           </form>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
