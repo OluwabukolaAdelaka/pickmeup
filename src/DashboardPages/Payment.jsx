@@ -1,8 +1,6 @@
 import React, { useContext } from "react";
 import { MainContext } from "./../components/ShipContext";
 import "../styles/Payment.css";
-import Complete from "../assets/complete.png";
-import { Link } from "react-router-dom";
 
 function Payment() {
   const { setCurrentStep } = useContext(MainContext);
@@ -79,83 +77,14 @@ function Payment() {
                 Close
               </button>
             </div>
-
             <div className="col-md-6">
-              {/* <!-- Button trigger modal --> */}
               <button
                 type="button"
                 className="continue-btn btn btn-lg"
-                data-bs-toggle="modal"
-                data-bs-target="#exampleModal"
+                onClick={() => setCurrentStep(5)}
               >
                 Pay &#8358;23,400
               </button>
-
-              {/* <!-- Modal --> */}
-              <div
-                className="modal fade"
-                id="exampleModal"
-                tabIndex="-1"
-                aria-labelledby="exampleModalLabel"
-                aria-hidden="true"
-              >
-                <div className="modal-dialog">
-                  <div className="modal-content">
-                    <div className="modal-header">
-                      <button
-                        type="button"
-                        className="btn-close"
-                        data-bs-dismiss="modal"
-                        aria-label="Close"
-                      ></button>
-                    </div>
-                    <div className="modal-body text-center p-5">
-                      <img
-                        src={Complete}
-                        className="card-img-top img-fluid mb-4"
-                        alt="..."
-                        style={{
-                          width: "25%",
-                          height: "auto",
-                        }}
-                      />
-                      <h6
-                        className="card-title pb-2"
-                        style={{
-                          color: "#1e1e1e",
-                          fontWeight: "500",
-                          fontSize: "1.5rem",
-                        }}
-                      >
-                        Hey, James
-                        <br />
-                        Your Order has been confirmed
-                      </h6>
-                      <p
-                        className="card-text"
-                        style={{
-                          color: "#1e1e1e",
-                          fontWeight: "500",
-                          fontSize: "1rem",
-                        }}
-                      >
-                        We’ll send you a shipping tracking code as soon as your
-                        order is proceed and shipped.
-                      </p>
-                      <div className="col ">
-                        <button
-                          type="button"
-                          className="continue-btn btn btn-lg"
-                        >
-                          <Link to="/dashboard" className="btn-link">
-                            Complete
-                          </Link>
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>

@@ -71,3 +71,19 @@
   border: none;
   margin: 1rem 0 0;
 }
+
+.step {
+  display: flex;
+  width: 2rem;
+  height: 2rem;
+  background-color: #fff;
+  color: #3e3e3e;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.completed {
+  background-color: #fcee21;
+  color: #3e3e3e;
+}
