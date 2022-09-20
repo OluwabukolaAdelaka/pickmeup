@@ -49,10 +49,10 @@ const Options = () => {
                 </div>
                 <div className="col text-center h-100">
                   <div
-                    className="card p-4 border-light h-100"
+                    className="card p-4 border-light  h-100"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
-                    <div className="card-body">
+                    <div className="card-body ">
                       <img src={AwardImg} className="img-fluid" alt="..." />
                       <h5 className="card-title mycard-title">
                         International Partners
@@ -67,10 +67,10 @@ const Options = () => {
                 </div>
                 <div className="col text-center h-100">
                   <div
-                    className="card p-4 border-light h-100"
+                    className="card p-4 border-light  h-100"
                     style={{ backgroundColor: "#e5e5e5" }}
                   >
-                    <div className="card-body h-100">
+                    <div className="card-body">
                       <img src={GiftImg} className="img-fluid" alt="..." />
                       <h5 className="card-title mycard-title">
                         Timely Delivery
@@ -83,10 +83,10 @@ const Options = () => {
                 </div>
                 <div className="col text-center h-100">
                   <div
-                    className="card p-4 border-light h-100"
+                    className="card p-4 border-light  h-100"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
-                    <div className="card-body">
+                    <div className="card-body  ">
                       <img src={SlackImg} className="img-fluid" alt="..." />
                       <h5 className="card-title mycard-title">Insurance</h5>
                       <p className="card-text mycard-msg">
@@ -134,9 +134,9 @@ const Options = () => {
             <div className="d-none d-lg-block card-img-overlay pt-3 absolute">
               <h3 className="text-center mt-4  mycard-hero-title">Why Us?</h3>
               <div className="row row-cols-1 row-cols-lg-3 g-4 mt-2">
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-2 border-light"
+                    className="card p-2 border-light  h-100"
                     style={{ backgroundColor: "#efefef" }}
                   >
                     <div className="card-body">
@@ -155,9 +155,9 @@ const Options = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-2 border-light"
+                    className="card p-2 border-light  h-100"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">
@@ -172,9 +172,9 @@ const Options = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-3 border-light"
+                    className="card p-3 border-light  h-100"
                     style={{ backgroundColor: "#e5e5e5" }}
                   >
                     <div className="card-body">
@@ -188,9 +188,9 @@ const Options = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-2 border-light"
+                    className="card p-2 border-light  h-100"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">
@@ -203,9 +203,9 @@ const Options = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-2 border-light"
+                    className="card p-2 border-light  h-100"
                     style={{ backgroundColor: "#d9d9d9" }}
                   >
                     <div className="card-body">
@@ -218,9 +218,9 @@ const Options = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col text-center">
+                <div className="col text-center  h-100">
                   <div
-                    className="card p-2 border-light"
+                    className="card p-2 border-light  h-100"
                     style={{ backgroundColor: "rgba(251, 237, 49, 0.4)" }}
                   >
                     <div className="card-body">

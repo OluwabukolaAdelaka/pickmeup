@@ -12,23 +12,23 @@ const Footer = () => {
       <div className="container-fluid d-block d-lg-flex justify-content-around text-center">
         <img src={Logo} alt="company logo" />
 
-        <ul className="footer-navlinks d-block d-md-flex justify-content-center align-items-center">
-          <li className="px-3">
+        <ul className=" d-block d-md-flex justify-content-center align-items-center mx-auto">
+          <li className="px-md-3">
             <Link className=" footer-navlink" to="/">
               Home
             </Link>
           </li>
-          <li className="px-3">
+          <li className="px-md-3">
             <Link className=" footer-navlink" to="/about">
               About
             </Link>
           </li>
-          <li className="px-3">
+          <li className="px-md-3">
             <Link className=" footer-navlink" to="/services">
               Services
             </Link>
           </li>
-          <li className="px-3">
+          <li className="px-md-3">
             <Link className=" footer-navlink" to="/contact">
               Contact
             </Link>
