@@ -3,7 +3,7 @@ import { MainContext } from "./../components/ShipContext";
 import "../styles/Payment.css";
 
 function Payment() {
-  const { setCurrentStep } = useContext(MainContext);
+  const { values, setValues, setCurrentStep } = useContext(MainContext);
 
   return (
     <main className="container">
@@ -16,7 +16,11 @@ function Payment() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                name="wallet"
+                onChange={(e) =>
+                  setValues({ ...values, wallet: e.target.checked })
+                }
+                value={values["wallet"]}
               />
               <label className="form-check-label " htmlFor="flexRadioDefault1">
                 Wallet
@@ -26,7 +30,11 @@ function Payment() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                name="card"
+                onChange={(e) =>
+                  setValues({ ...values, card: e.target.checked })
+                }
+                value={values["card"]}
               />
               <label className="form-check-label " htmlFor="flexRadioDefault1">
                 Card
@@ -36,7 +44,11 @@ function Payment() {
               <input
                 className="form-check-input"
                 type="radio"
-                name="flexRadioDefault"
+                name="transfer"
+                onChange={(e) =>
+                  setValues({ ...values, transfer: e.target.checked })
+                }
+                value={values["transfer"]}
               />
               <label className="form-check-label " htmlFor="flexRadioDefault1">
                 Transfer

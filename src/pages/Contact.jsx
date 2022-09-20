@@ -8,11 +8,11 @@ const Contact = () => {
       <Navigation />
 
       <div className="row">
-        <div className="col-sm-12 col-md-3"></div>
-        <div className="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center contact-details">
+        <div className="col-sm-12 col-lg-3"></div>
+        <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center align-items-center contact-details">
           <h3 className="contact-title1">SEND US A</h3>
           <h3 className="contact-title2">MESSAGE</h3>
-          <div className="col-sm-12 col-md-6  contact-form">
+          <div className="col  contact-form">
             <form>
               <div className="mb-3">
                 <input

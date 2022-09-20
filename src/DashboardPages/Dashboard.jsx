@@ -20,8 +20,8 @@ function Dashboard() {
       <DashboardNav />
       {/* Hero Container */}
       <h3 className="text-start hero-title pt-2">Welcome Back!</h3>
-      <div className="row row-cols-1 row-cols-md-2 g-4">
-        <div className="col">
+      <div className="row row-cols-1 row-cols-lg-2 g-4">
+        <div className="col h-100">
           <div
             className="card border-light mt-4"
             style={{
@@ -75,7 +75,7 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="col">
+        <div className="col h-100">
           <div className="card border-light pt-3">
             <div className="card-body">
               <img src={HeroImg} className="img-fluid" alt="" />
@@ -86,9 +86,9 @@ function Dashboard() {
 
       {/* Section */}
 
-      <div className="row row-cols-1 row-cols-md-3 g-4 my-3 ">
-        <div className="col ">
-          <div className="card p-4 border-light section-card">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 my-3 ">
+        <div className="col">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={PlaneIcon} className="img-fluid" alt="..." />
@@ -97,8 +97,8 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="col ">
-          <div className="card p-4 border-light section-card">
+        <div className="col">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={CargoIcon} className="img-fluid" alt="..." />
@@ -107,8 +107,8 @@ function Dashboard() {
             </div>
           </div>
         </div>
-        <div className="col">
-          <div className="card p-4 border-light section-card">
+        <div className="col ">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={ImportIcon} className="img-fluid" alt="..." />
@@ -118,7 +118,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col ">
-          <div className="card p-4 border-light section-card">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={ShipmentIcon} className="img-fluid" alt="..." />
@@ -128,7 +128,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col ">
-          <div className="card p-4 border-light section-card">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={EstimatorIcon} className="img-fluid" alt="..." />
@@ -138,7 +138,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col ">
-          <div className="card p-4 border-light section-card">
+          <div className="card p-4 border-light section-card h-100">
             <div className="card-body">
               <div className="text-end">
                 <img src={ConverterIcon} className="img-fluid" alt="..." />

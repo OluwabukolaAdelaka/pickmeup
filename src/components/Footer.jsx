@@ -9,10 +9,10 @@ import "../styles/Footer.css";
 const Footer = () => {
   return (
     <footer>
-      <div className="container-fluid d-block d-md-flex justify-content-around text-center">
+      <div className="container-fluid d-block d-lg-flex justify-content-around text-center">
         <img src={Logo} alt="company logo" />
 
-        <ul className="footer-navlinks d-block d-md-flex">
+        <ul className="footer-navlinks d-block d-md-flex justify-content-center align-items-center">
           <li className="px-3">
             <Link className=" footer-navlink" to="/">
               Home

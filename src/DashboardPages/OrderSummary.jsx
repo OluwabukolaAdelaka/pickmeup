@@ -11,40 +11,60 @@ function OrderSummary() {
       </p>
       <div className="card mb-3">
         <div className="card-body">
-          <div>
-            <h6 className="ps-4">PICKUP FROM</h6>
-            <div className="mb-5">
-              {finalValues.map((data) => (
-                <ul
-                  key={data.fullNameSender}
-                  style={{ color: "rgba(62, 62, 62, 0.5)", fontWeight: "600" }}
-                >
-                  <li className="pb-2">{data.fullNameSender}</li>
-                  <li className="pb-2">{data.addressSender}</li>
-                  <li className="pb-2">{data.landMark}</li>
-                  <li className="pb-2">{data.phoneNumberSender}</li>
-                  <button className="change-btn">
+          <div className="row">
+            <div className="col">
+              <h6 className="ps-4">PICKUP FROM</h6>
+              <div className="mb-5">
+                {finalValues.map((data) => (
+                  <ul
+                    key={data.fullNameSender}
+                    style={{
+                      color: "rgba(62, 62, 62, 0.5)",
+                      fontWeight: "600",
+                    }}
+                  >
+                    <li className="pb-2">{data.fullNameSender}</li>
+                    <li className="pb-2">{data.addressSender}</li>
+                    <li className="pb-2">{data.landMark}</li>
+                    <li className="pb-2">{data.phoneNumberSender}</li>
+
+                    {/* display btn only if there is data in finalvalues */}
+                  </ul>
+                ))}
+                {finalValues.length > 0 ? (
+                  <button className="change-btn ms-4">
                     Edit <MdEdit />
                   </button>
-                </ul>
-              ))}
+                ) : (
+                  ""
+                )}
+              </div>
             </div>
-            <p className="ps-4">SHIPPING METHOD</p>
-            <div>
-              {finalValues.map((data) => (
-                <ul
-                  key={data.fullNameReceiver}
-                  style={{ color: "rgba(62, 62, 62, 0.5)", fontWeight: "600" }}
-                >
-                  <li className="pb-2">{data.fullNameReceiver}</li>
-                  <li className="pb-2">{data.addressReceiver}</li>
-                  <li className="pb-2">{data.city}</li>
-                  <li className="pb-2">{data.phoneNumberReceiver}</li>
-                  <button className="change-btn">
+            <div className="col">
+              <p className="ps-4">SHIPPING METHOD</p>
+              <div>
+                {finalValues.map((data) => (
+                  <ul
+                    key={data.fullNameReceiver}
+                    style={{
+                      color: "rgba(62, 62, 62, 0.5)",
+                      fontWeight: "600",
+                    }}
+                  >
+                    <li className="pb-2">{data.fullNameReceiver}</li>
+                    <li className="pb-2">{data.addressReceiver}</li>
+                    <li className="pb-2">{data.city}</li>
+                    <li className="pb-2">{data.phoneNumberReceiver}</li>
+                  </ul>
+                ))}
+                {finalValues.length > 0 ? (
+                  <button className="change-btn ms-4">
                     Edit <MdEdit />
                   </button>
-                </ul>
-              ))}
+                ) : (
+                  ""
+                )}
+              </div>
             </div>
           </div>
 
@@ -72,7 +92,7 @@ function OrderSummary() {
             <div className="col">
               <h6>ITEM CATEGORY</h6>
               {finalValues.map((data) => (
-                <p key={data.fullNameSender} className="mt-3">
+                <p key={data.itemCategory} className="mt-3">
                   {data.itemCategory}
                 </p>
               ))}
@@ -80,7 +100,7 @@ function OrderSummary() {
             <div className="col text-center">
               <h6>ITEM VALUE</h6>
               {finalValues.map((data) => (
-                <p key={data.fullNameSender} className="mt-3">
+                <p key={data.itemValue} className="mt-3">
                   {data.itemValue}
                 </p>
               ))}
@@ -96,7 +116,7 @@ function OrderSummary() {
             <div className="col">
               <h6>ITEM DESCRIPTION</h6>
               {finalValues.map((data) => (
-                <p key={data.fullNameSender} className="mt-3">
+                <p key={data.itemDetails} className="mt-3">
                   {data.itemDetails}
                 </p>
               ))}
@@ -113,7 +133,7 @@ function OrderSummary() {
             <div className="col">
               <h6>QUANTITY</h6>
               {finalValues.map((data) => (
-                <p key={data.fullNameSender} className="mt-3">
+                <p key={data.itemQty} className="mt-3">
                   {data.itemQty}
                 </p>
               ))}
@@ -121,7 +141,7 @@ function OrderSummary() {
             <div className="col text-center">
               <h6>WEIGHT</h6>
               {finalValues.map((data) => (
-                <p key={data.fullNameSender} className="mt-3">
+                <p key={data.itemWeight} className="mt-3">
                   {data.itemWeight}
                 </p>
               ))}

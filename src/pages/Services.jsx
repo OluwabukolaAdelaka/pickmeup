@@ -17,9 +17,9 @@ const Services = () => {
         <div className="row text-center d-flex justify-content-center align-items-center">
           <div className="d-none col"></div>
           <div className="col-sm-12 col-md-8">
-            <div className="row row-cols-1 row-cols-md-2 g-4">
+            <div className="row row-cols-1 row-cols-lg-2 g-4">
               <div className="col">
-                <div className="card border-light">
+                <div className="card border-light h-100">
                   <div className="card-body">
                     <h5 className="card-title service-title">
                       International Delivery
@@ -36,7 +36,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col">
-                <div className="card border-light">
+                <div className="card border-light h-100">
                   <div className="card-body">
                     <h5 className="card-title service-title">Cargo Service</h5>
                     <p className="card-text service-msg">
@@ -51,7 +51,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col">
-                <div className="card border-light">
+                <div className="card border-light h-100">
                   <div className="card-body">
                     <h5 className="card-title service-title">Import</h5>
                     <p className="card-text service-msg">
@@ -66,7 +66,7 @@ const Services = () => {
                 </div>
               </div>
               <div className="col">
-                <div className="card border-light">
+                <div className="card border-light h-100">
                   <div className="card-body">
                     <h5 className="card-title service-title">Consultancy</h5>
                     <p className="card-text service-msg">

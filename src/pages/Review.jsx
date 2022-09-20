@@ -31,7 +31,7 @@ const Review = () => {
         <div className="row text-center d-flex justify-content-center align-items-center">
           <div className="d-none col"></div>
           <div className="col-sm-12 col-md-8">
-            <div className="row row-cols-1 row-cols-md-2 g-4 pt-4">
+            <div className="row row-cols-1 row-cols-lg-2 g-4 pt-4">
               <div className="col">
                 <div className="card border-light pt-4">
                   <div className="card-body">
