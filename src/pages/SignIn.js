@@ -147,7 +147,9 @@ function SignIn() {
             </div>
 
             <div className="d-grid">
-              <Link to="/dashboard">
+              <Link to="/dashboard" className={
+                    !(dirty && isValid) ? "pe-none" : ""
+                  }>
                 <button
                   className={
                     !(dirty && isValid) ? "sign-in-btn-disabled" : "signin-btn"

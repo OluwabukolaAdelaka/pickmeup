@@ -180,13 +180,17 @@ function Signup() {
             </div>
 
             <div className="d-grid">
-              <Link to="/signin">
+              <Link to="/signin" className={
+                    !(dirty && isValid) ? "pe-none" : ""
+                  }>
                 <button
                   className={
                     !(dirty && isValid) ? "signUpBtnDisabled" : "signUpBtn"
                   }
-                  style={{ width: "100%" }}
+                  style={{ width: "100%"}}
                   type="submit"
+                  disabled={!(dirty && isValid)}
+              
                 >
                   Create an account
                 </button>
