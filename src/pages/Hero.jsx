@@ -9,7 +9,7 @@ const Hero = () => {
       <div className="row row-cols-1 row-cols-lg-2 px-2">
         <div className=" col d-flex flex-column justify-content-center">
           <h1 className="hero-msg">
-            We are <span>Picmeup</span>
+            We are <span>Pickmeup</span>
           </h1>
           <h1 className="hero-msg">
             it’s all about delivery parcels on time anywhere
