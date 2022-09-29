@@ -21,29 +21,29 @@ const Navigation = () => {
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto">
-            <li className="nav-item">
+            <li className="nav-item mb-sm-3 mb-lg-0">
               <Link className="nav-link pmu-navlinks" to="/">
                 Home
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mb-sm-3 mb-lg-0">
               <Link className="nav-link pmu-navlinks" to="/about">
                 About
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mb-sm-3 mb-lg-0">
               <Link className="nav-link pmu-navlinks" to="/services">
                 Services
               </Link>
             </li>
-            <li className="nav-item">
+            <li className="nav-item mb-sm-3 mb-lg-0">
               <Link className="nav-link pmu-navlinks" to="/contact">
                 Contact
               </Link>
             </li>
           </ul>
           <Link to="/signin">
-            <button className="sign-in">Sign In</button>
+            <button className="sign-in ms-sm-0 ms-lg-2">Sign In</button>
           </Link>
         </div>
       </div>

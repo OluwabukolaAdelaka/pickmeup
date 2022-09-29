@@ -3,7 +3,7 @@
 }
 
 .logo {
-  padding-bottom: 1rem;
+  padding: 1rem 0rem;
 }
 
 .pmu-navlinks {
@@ -20,10 +20,15 @@
   background-image: linear-gradient(to right, #fcee21 0%, #fcee21 100%);
   width: 8rem;
   height: 2.5rem;
-  margin-left: 2rem;
   border: none;
   border-radius: 0.9rem;
   font-size: 1.2rem;
   font-weight: 700;
   color: #3e3e3e;
+}
+
+@media screen and (max-width: 575.98px) {
+  .logo {
+    width: 40%;
+  }
 }
