@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import "../styles/SignIn.css";
 
 function SignIn() {
-  const [visibility, setVisibility] = useState(true);
+  const [visibility, setVisibility] = useState(false);
 
   const toggleVisibility = () => {
     setVisibility(!visibility);

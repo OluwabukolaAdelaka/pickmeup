@@ -1,5 +1,5 @@
 .service-hero-title {
-  font-size: 2.3rem;
+  font-size: 2rem;
   font-weight: 600;
   margin: 2rem auto;
   color: #343434;
@@ -7,15 +7,15 @@
 
 .service-title {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 1.5rem;
   font-weight: 600;
   margin: 2rem 0;
   color: #343434;
 }
 
 .service-msg {
-  font-size: 1.5rem;
-  font-weight: 500;
+  font-size: 1.2rem;
+  font-weight: 400;
   color: #343434;
   padding-bottom: 4rem;
 }

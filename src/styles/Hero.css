@@ -2,13 +2,13 @@
   margin: 10rem auto 6rem;
 }
 
-.text-part {
+/* .text-part {
   font-size: 3.5rem;
   font-weight: 700;
   color: #3e3e3e;
-}
+} */
 .hero-msg {
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
   color: #3e3e3e;
 }
@@ -18,7 +18,7 @@ span {
 
 .hero-text {
   font-size: 2rem;
-  font-weight: 600;
+  font-weight: 500;
   color: #000000;
   margin-top: 1.2rem;
 }

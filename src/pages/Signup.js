@@ -9,8 +9,8 @@ import { FcGoogle } from "react-icons/fc";
 import "../styles/Signup.css";
 
 function Signup() {
-  const [visibility, setVisibility] = useState(true);
-  const [confirmVisibility, setConfirmVisibility] = useState(true);
+  const [visibility, setVisibility] = useState(false);
+  const [confirmVisibility, setConfirmVisibility] = useState(false);
 
   const toggleVisibility = () => {
     setVisibility(!visibility);
@@ -153,7 +153,7 @@ function Signup() {
               </label>
               <div className="input-group">
                 <input
-                  type={confirmVisibility ? "text" : "password"}
+                  type={confirmVisibility ?  "text" : "password"}
                   id="confirmPassword"
                   name="confirmPassword"
                   value={values.confirmPassword}

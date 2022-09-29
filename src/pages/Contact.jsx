@@ -12,7 +12,7 @@ const Contact = () => {
         <div className="col-sm-12 col-lg-6 d-flex flex-column justify-content-center align-items-center contact-details">
           <h3 className="contact-title1">SEND US A</h3>
           <h3 className="contact-title2">MESSAGE</h3>
-          <div className="col  contact-form">
+          <div className="col contact-form">
             <form>
               <div className="mb-3">
                 <input
@@ -56,7 +56,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="col-sm-12 col-md-3"></div>
+        <div className="col-sm-12 col-lg-3"></div>
       </div>
     </section>
   );

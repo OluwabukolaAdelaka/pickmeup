@@ -5,15 +5,15 @@
 
 .title-about {
   text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   color: #c4c4c4;
 }
 
 .title-us {
   text-align: center;
-  font-size: 3rem;
-  font-weight: 500;
+  font-size: 2rem;
+  font-weight: 600;
   color: #3e3e3e;
   padding: 0rem 0 1.5rem;
 }
@@ -27,7 +27,7 @@
 }
 
 .about-msg {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
   color: #000000;
   padding: 1rem 0;

@@ -174,7 +174,7 @@ const Options = () => {
                 </div>
                 <div className="col text-center  h-100">
                   <div
-                    className="card p-3 border-light  h-100"
+                    className="card p-3 border-light h-100"
                     style={{ backgroundColor: "#e5e5e5" }}
                   >
                     <div className="card-body">
