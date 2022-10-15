@@ -1,10 +1,10 @@
 import React, { useContext } from "react";
 import "react-step-progress-bar/styles.css";
-import { MainContext } from "../components/ShipContext";
+import { MainContext } from "../../components/ShipContext";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import Logo from "../assets/pickmeup-logo.png";
-import "../styles/ShippingDetails.css";
+import Logo from "../../assets/pickmeup-logo.png";
+import "../../styles/ShippingDetails.css";
 import ItemDescription from "./ItemDescription";
 import OrderSummary from "./OrderSummary";
 import SenderDetails from "./SenderDetails";

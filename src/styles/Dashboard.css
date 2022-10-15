@@ -40,6 +40,10 @@
   color: #3e3e3e;
 }
 
+.hero-btn-link:hover {
+  color: #3e3e3e;
+}
+
 /* Section */
 .section-card {
   background: linear-gradient(

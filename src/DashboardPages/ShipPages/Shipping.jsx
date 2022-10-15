@@ -1,8 +1,8 @@
 import React from "react";
-import Logo from "../assets/pickmeup-logo.png";
+import Logo from "../../assets/pickmeup-logo.png";
 import { MdArrowBackIosNew } from "react-icons/md";
 import { Link } from "react-router-dom";
-import "../styles/Shipping.css";
+import "../../styles/Shipping.css";
 
 function Shipping() {
   return (

@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { MainContext } from "../components/ShipContext";
+import { MainContext } from "../../components/ShipContext";
 import { MdEdit } from "react-icons/md";
 
 function OrderSummary() {

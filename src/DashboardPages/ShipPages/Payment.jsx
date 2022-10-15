@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
-import { MainContext } from "./../components/ShipContext";
-import "../styles/Payment.css";
+import { MainContext } from "../../components/ShipContext";
+import "../../styles/Payment.css";
 
 function Payment() {
   const { values, setValues, setCurrentStep } = useContext(MainContext);

@@ -7,9 +7,10 @@ import Services from "./pages/Services";
 import Signup from "./pages/Signup";
 import SignIn from "./pages/SignIn";
 import ForgotPassword from "./pages/ForgotPassword";
-import Dashboard from "./DashboardPages/Dashboard";
-import Shipping from "./DashboardPages/Shipping";
-import ShippingDetails from "./DashboardPages/ShippingDetails";
+import Dashboard from "./DashboardPages/ShipPages/Dashboard"
+import Shipping from "./DashboardPages/ShipPages/Shipping";
+import ShippingDetails from "./DashboardPages/ShipPages/ShippingDetails";
+import TrackOrder from "./DashboardPages/TrackPages/TrackOrder";
 
 function App() {
   
@@ -26,6 +27,8 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="shipping" element={<Shipping />} />
             <Route path="shippingDetails" element={<ShippingDetails />} />
+            <Route path="track" element={<TrackOrder />} />
+
       </Routes>
     </>
   );

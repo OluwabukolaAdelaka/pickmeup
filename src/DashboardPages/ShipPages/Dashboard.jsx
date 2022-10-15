@@ -1,18 +1,18 @@
 import React from "react";
-import DashboardNav from "../components/DashboardNav";
+import DashboardNav from "../../components/DashboardNav";
 import { Link } from "react-router-dom";
-import WalletIcon from "../assets/wallet.png";
-import FundWalletIcon from "../assets/fundwallet.png";
-import TransactionIcon from "../assets/transaction.png";
-import HeroImg from "../assets/hero-img.png";
-import PlaneIcon from "../assets/international.png";
-import CargoIcon from "../assets/cargo.png";
-import ImportIcon from "../assets/import.png";
-import ShipmentIcon from "../assets/shipment.png";
-import EstimatorIcon from "../assets/estimator.png";
-import ConverterIcon from "../assets/converter.png";
-import Footer from "../components/Footer";
-import "../styles/Dashboard.css";
+import WalletIcon from "../../assets/wallet.png";
+import FundWalletIcon from "../../assets/fundwallet.png";
+import TransactionIcon from "../../assets/transaction.png";
+import HeroImg from "../../assets/hero-img.png";
+import PlaneIcon from "../../assets/international.png";
+import CargoIcon from "../../assets/cargo.png";
+import ImportIcon from "../../assets/import.png";
+import ShipmentIcon from "../../assets/shipment.png";
+import EstimatorIcon from "../../assets/estimator.png";
+import ConverterIcon from "../../assets/converter.png";
+import Footer from "../../components/Footer";
+import "../../styles/Dashboard.css";
 
 function Dashboard() {
   return (
@@ -52,7 +52,10 @@ function Dashboard() {
               </div>
               <>
                 <button type="button" className="db-hero-btn">
-                  <Link className="text-decoration-none hero-btn-link" to="/">
+                  <Link
+                    className="text-decoration-none hero-btn-link"
+                    to="fund"
+                  >
                     <img
                       src={FundWalletIcon}
                       className="img-fluid pe-2"
@@ -62,7 +65,10 @@ function Dashboard() {
                   </Link>
                 </button>
                 <button type="button" className="db-hero-btn">
-                  <Link className="text-decoration-none hero-btn-link" to="/">
+                  <Link
+                    className="text-decoration-none hero-btn-link"
+                    to="transaction"
+                  >
                     <img
                       src={TransactionIcon}
                       className="img-fluid pe-2"
@@ -118,14 +124,16 @@ function Dashboard() {
           </div>
         </div>
         <div className="col ">
-          <div className="card p-4 border-light section-card h-100">
-            <div className="card-body">
-              <div className="text-end">
-                <img src={ShipmentIcon} className="img-fluid" alt="..." />
+          <Link to="/track">
+            <div className="card p-4 border-light section-card h-100">
+              <div className="card-body">
+                <div className="text-end">
+                  <img src={ShipmentIcon} className="img-fluid" alt="..." />
+                </div>
+                <h5 className="card-title section-title">Track Shipment</h5>
               </div>
-              <h5 className="card-title section-title">Track Shipment</h5>
             </div>
-          </div>
+          </Link>
         </div>
         <div className="col ">
           <div className="card p-4 border-light section-card h-100">

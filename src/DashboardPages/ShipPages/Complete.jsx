@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import { MainContext } from "../components/ShipContext";
-import CompleteIcon from "../assets/complete.png";
+import { MainContext } from "../../components/ShipContext";
+import CompleteIcon from "../../assets/complete.png";
 
 function Complete() {
   const { setCurrentStep } = useContext(MainContext);

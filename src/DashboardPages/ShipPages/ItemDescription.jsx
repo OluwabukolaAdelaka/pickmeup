@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { MainContext } from "../components/ShipContext";
+import { MainContext } from "../../components/ShipContext";
 
 function ItemDescription() {
   const { values, setValues, setCurrentStep, displaySummary } =
