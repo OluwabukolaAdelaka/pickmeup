@@ -1,13 +1,14 @@
 import React from "react";
 import Logo from "../../assets/pickmeup-logo.png";
 import { Link } from "react-router-dom";
+import { AiOutlineClose } from "react-icons/ai";
 import "../../styles/Track.css";
 
 function TrackOrder() {
   return (
     <>
       <div
-        className="container"
+        className="container-fluid"
         style={{ backgroundColor: "#eeeeee", height: "100vh" }}
       >
         <nav className="navbar navbar-expand-lg border-dark bg-white border-bottom border-1 sticky-top">
@@ -90,6 +91,11 @@ function TrackOrder() {
             <div className="col-sm-12 col-md-6 ">
               <div className="card border border-0 h-100">
                 <div className="card-body">
+                  <div className="text-end me-2">
+                    <Link to="/dashboard">
+                      <AiOutlineClose size={30} style={{ color: "#3e3e3e" }} />
+                    </Link>
+                  </div>
                   <h5 className="track-title">Track Shipment</h5>
                   <p className="track-msg">Enter your tracking ID</p>
                   <input
@@ -100,7 +106,7 @@ function TrackOrder() {
 
                   <div className="d-grid py-5">
                     <button type="button" className="yellow-bg2">
-                      <Link to="/" className="track-link">
+                      <Link to="/track" className="track-link">
                         Track
                       </Link>
                     </button>

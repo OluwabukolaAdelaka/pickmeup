@@ -54,7 +54,7 @@ function Dashboard() {
                 <button type="button" className="db-hero-btn">
                   <Link
                     className="text-decoration-none hero-btn-link"
-                    to="fund"
+                    to="/fundwallet"
                   >
                     <img
                       src={FundWalletIcon}
@@ -67,7 +67,7 @@ function Dashboard() {
                 <button type="button" className="db-hero-btn">
                   <Link
                     className="text-decoration-none hero-btn-link"
-                    to="transaction"
+                    to="/transaction"
                   >
                     <img
                       src={TransactionIcon}
@@ -124,7 +124,7 @@ function Dashboard() {
           </div>
         </div>
         <div className="col ">
-          <Link to="/track">
+          <Link to="/trackorder" style={{ textDecoration: "none" }}>
             <div className="card p-4 border-light section-card h-100">
               <div className="card-body">
                 <div className="text-end">

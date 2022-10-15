@@ -11,6 +11,7 @@ import Dashboard from "./DashboardPages/ShipPages/Dashboard"
 import Shipping from "./DashboardPages/ShipPages/Shipping";
 import ShippingDetails from "./DashboardPages/ShipPages/ShippingDetails";
 import TrackOrder from "./DashboardPages/TrackPages/TrackOrder";
+import FundWallet from "./DashboardPages/FundWallet";
 
 function App() {
   
@@ -27,7 +28,8 @@ function App() {
             <Route path="dashboard" element={<Dashboard />} />
             <Route path="shipping" element={<Shipping />} />
             <Route path="shippingDetails" element={<ShippingDetails />} />
-            <Route path="track" element={<TrackOrder />} />
+            <Route path="trackorder" element={<TrackOrder />} />
+            <Route path="fundwallet" element={<FundWallet />} />
 
       </Routes>
     </>
